@@ -770,4 +770,67 @@ footer a:hover { color: var(--red); }
         </div>
         <h2 class="card-title"><span data-id>FMI Siapkan Protokol Pendakian Gunung di Masa Pandemi COVID-19</span><span data-en>FMI Prepares Mountain Climbing Protocol During the COVID-19 Pandemic</span></h2>
         <p class="card-desc" data-id>FMI menyusun panduan protokol kesehatan, keselamatan, dan keamanan penyelenggaraan pendakian gunung pada masa pandemi COVID-19.</p>
-     
+        <p class="card-desc" data-en>FMI developed health, safety, and security protocol guidelines for mountain climbing during the COVID-19 pandemic.</p>
+        <a class="card-link" href="https://kumparan.com/harley-b-sastha/fmi-menyiapkan-protokol-pendakian-gunung-jika-diselenggarakan-pada-masa-covid-19-1tb3FqjBZwE" target="_blank" rel="noopener">
+          <span data-id>Baca Selengkapnya</span><span data-en>Read More</span>
+          <span class="link-arrow">↗</span>
+        </a>
+      </div></article>
+<article data-category="KERJASAMA" class="news-card news-card--icon reveal">
+      <div class="card-icon-col">
+        <span class="card-icon-box">🤝</span>
+      </div>
+      <div class="card-content">
+        <div class="card-meta">
+          <span class="card-tag" style="background:#111111">KERJASAMA</span>
+          <span class="card-source">Detik.com</span>
+          <span class="card-dot">·</span>
+          <span class="card-date" data-id>2020</span>
+          <span class="card-date" data-en>2020</span>
+        </div>
+        <h2 class="card-title"><span data-id>FMI dan APGI Tanda Tangani MOU Pengembangan Dunia Pendakian</span><span data-en>FMI and APGI Sign MOU on Mountaineering Development</span></h2>
+        <p class="card-desc" data-id>FMI dan Asosiasi Pemandu Gunung Indonesia (APGI) menandatangani nota kesepahaman untuk bersama-sama mengembangkan ekosistem pendakian Indonesia.</p>
+        <p class="card-desc" data-en>FMI and APGI signed a memorandum of understanding to jointly develop Indonesia's mountaineering ecosystem.</p>
+        <a class="card-link" href="https://www.detik.com/tag/federasi-mountaineering-indonesia" target="_blank" rel="noopener">
+          <span data-id>Baca Selengkapnya</span><span data-en>Read More</span>
+          <span class="link-arrow">↗</span>
+        </a>
+      </div></article>
+
+</main>
+<footer>
+  <span>© 2026 Federasi Mountaineering Indonesia</span>
+  <a href="https://mountaineering-indonesia.org">mountaineering-indonesia.org</a>
+</footer>
+<script>
+function filterNews(btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  var cat = btn.getAttribute('data-filter');
+  document.querySelectorAll('.news-grid article').forEach(function(a) {
+    if (cat === 'SEMUA' || a.getAttribute('data-category') === cat) {
+      a.style.display = '';
+    } else {
+      a.style.display = 'none';
+    }
+  });
+}
+
+function setLang(lang) {
+  document.body.className = lang === 'en' ? 'lang-en' : 'lang-id';
+  document.getElementById('btn-id').className = lang === 'id' ? 'active' : '';
+  document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
+}
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 60);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.05 });
+reveals.forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
