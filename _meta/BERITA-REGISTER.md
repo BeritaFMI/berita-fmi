@@ -6,9 +6,9 @@
 
 ---
 
-## ⚡ Next Available Number: **035**
+## ⚡ Next Available Number: **036**
 
-> Sebelum membuat artikel baru → ambil nomor ini → langsung update field di atas menjadi 013.
+> Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
 
 ---
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 035 | `035-musprov-fmi-maluku-nasir-rumra-2026.html` | Musprov FMI Maluku Pilih Nasir Rumra Ketua Umum 2026–2030 | 21 Jun 2026 | ORGANISASI | Editor | Lokal |
 | 034 | `034-everest-2026-sherpa-reformasi.html` | Pasca-Musim Everest 2026: Sherpa dan Pemandu Serukan Reformasi | 23 Jun 2026 | INTERNASIONAL | Claude | Lokal |
 | 033 | `033-gunung-agung-ditutup-karya-aci-purnama-kasa.html` | Gunung Agung Ditutup Sepekan untuk Upacara Karya Aci Purnama Kasa | 22 Jun 2026 | KESELAMATAN | Claude | Lokal |
 | 032 | `032-antoine-girard-paralayang-karakoram-2026.html` | Antoine Girard Cetak Rekor Dunia Paralayang 400 Km Karakoram | 22 Jun 2026 | EKSPEDISI | Claude | Lokal |
@@ -85,7 +86,4 @@ Artikel berikut saat ini tampil tanpa thumbnail di index.html (memakai card icon
 | No | Slug/Label | Status Gambar |
 |----|-----------|--------------|
 | 002 | carstensz-mou-pma-fmi | ❌ Belum ada |
-| 003 | kemenhut-grade-jalur-pendakian | ❌ Belum ada |
-| 004 | fmi-imgs-klasifikasi-gunung | ❌ Belum ada |
-| 005 | fmi-keselamatan-sop-pendakian | ❌ Belum ada |
-| 006 | se
+| 003 | k
