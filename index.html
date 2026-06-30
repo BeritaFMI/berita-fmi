@@ -166,6 +166,54 @@ footer a:hover { color: var(--red); }
 <main class="news-grid">
 <article data-category="EKSPEDISI" class="news-card news-card--thumb reveal">
   <div class="card-thumb">
+    <img src="img/043-lumbo-himal-first-ascent-nepal-2026.jpg" alt="Tim Nepal Cetak Pendakian Pertama Lumbo Himal 6.250 m" loading="lazy">
+  </div>
+  <div class="card-content">
+    <div class="card-meta">
+      <span class="card-tag" style="background:#C8102E">EKSPEDISI</span>
+      <span class="card-source">ExplorersWeb</span>
+      <span class="card-dot">·</span>
+      <span class="card-date" data-id>26 Juni 2026</span>
+      <span class="card-date" data-en>June 26, 2026</span>
+    </div>
+    <h2 class="card-title">
+      <span data-id>Tim Nepal Cetak Pendakian Pertama Lumbo Himal 6.250 m</span>
+      <span data-en>Nepali Team Completes First Ascent of Remote Lumbo Himal (6,250m)</span>
+    </h2>
+    <p class="card-desc" data-id>Tim pemandu Nepal dari Himalayan Summit Club berhasil menaklukkan Lumbo Himal (6.250 m) untuk pertama kalinya — sebuah puncak terpencil di antara kawasan Manaslu dan Ganesh Himal yang belum pernah didaki sebelumnya, dengan jalur graded D+ dalam skala alpine Prancis.</p>
+    <p class="card-desc" data-en>A Nepali guide team from Himalayan Summit Club completed the first ascent of Lumbo Himal (6,250m) — a remote, previously unclimbed peak between the Manaslu Conservation Area and the Ganesh Himal Range, graded D+ on the French alpine scale.</p>
+    <a class="card-link" href="043-lumbo-himal-first-ascent-nepal-2026.html" target="_blank">
+      <span data-id>Baca Selengkapnya</span><span data-en>Read More</span>
+      <span class="link-arrow">↗</span>
+    </a>
+  </div>
+</article>
+<article data-category="INTERNASIONAL" class="news-card news-card--thumb reveal">
+  <div class="card-thumb">
+    <img src="img/042-green-boots-everest-pemulangan-jenazah-2026.jpg" alt="India Siapkan Misi Berisiko Tinggi Evakuasi 'Green Boots' dari Everest" loading="lazy">
+  </div>
+  <div class="card-content">
+    <div class="card-meta">
+      <span class="card-tag" style="background:#111111">INTERNASIONAL</span>
+      <span class="card-source">ExplorersWeb</span>
+      <span class="card-dot">·</span>
+      <span class="card-date" data-id>28 Juni 2026</span>
+      <span class="card-date" data-en>June 28, 2026</span>
+    </div>
+    <h2 class="card-title">
+      <span data-id>India Siapkan Misi Berisiko Tinggi Evakuasi 'Green Boots' dari Everest</span>
+      <span data-en>India Launches High-Risk Mission to Retrieve 'Green Boots' from Everest</span>
+    </h2>
+    <p class="card-desc" data-id>Setelah hampir 30 tahun menjadi penanda misterius di Northeast Ridge sisi Tibet, jenazah Dorje Morup — kini resmi teridentifikasi via DNA — menjadi target misi evakuasi berisiko tinggi oleh ITBP India dari ketinggian 8.500 m.</p>
+    <p class="card-desc" data-en>After nearly 30 years as a grim landmark on the Northeast Ridge, the body of Dorje Morup — now officially identified by DNA — is the target of a high-risk retrieval mission by India's ITBP from 8,500m.</p>
+    <a class="card-link" href="042-green-boots-everest-pemulangan-jenazah-2026.html" target="_blank">
+      <span data-id>Baca Selengkapnya</span><span data-en>Read More</span>
+      <span class="link-arrow">↗</span>
+    </a>
+  </div>
+</article>
+<article data-category="EKSPEDISI" class="news-card news-card--thumb reveal">
+  <div class="card-thumb">
     <img src="img/041-holecek-petrecek-rupal-face-nanga-parbat-2026.jpg" alt="Duo Ceko Kembali Tantang Muka Rupal Nanga Parbat, Misi yang Belum Tuntas" loading="lazy">
   </div>
   <div class="card-content">
@@ -1103,48 +1151,5 @@ footer a:hover { color: var(--red); }
           <span class="card-date" data-en>2020</span>
         </div>
         <h2 class="card-title"><span data-id>FMI dan APGI Tanda Tangani MOU Pengembangan Dunia Pendakian</span><span data-en>FMI and APGI Sign MOU on Mountaineering Development</span></h2>
-        <p class="card-desc" data-id>FMI dan Asosiasi Pemandu Gunung Indonesia (APGI) menandatangani nota kesepahaman untuk bersama-sama mengembangkan ekosistem pendakian Indonesia.</p>
-        <p class="card-desc" data-en>FMI and APGI signed a memorandum of understanding to jointly develop Indonesia's mountaineering ecosystem.</p>
-        <a class="card-link" href="https://www.detik.com/tag/federasi-mountaineering-indonesia" target="_blank" rel="noopener">
-          <span data-id>Baca Selengkapnya</span><span data-en>Read More</span>
-          <span class="link-arrow">↗</span>
-        </a>
-      </div></article>
-
-</main>
-<footer>
-  <span>© 2026 Federasi Mountaineering Indonesia</span>
-  <a href="https://mountaineering-indonesia.org">mountaineering-indonesia.org</a>
-</footer>
-<script>
-function filterNews(btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  var cat = btn.getAttribute('data-filter');
-  document.querySelectorAll('.news-grid article').forEach(function(a) {
-    if (cat === 'SEMUA' || a.getAttribute('data-category') === cat) {
-      a.style.display = '';
-    } else {
-      a.style.display = 'none';
-    }
-  });
-}
-
-function setLang(lang) {
-  document.body.className = lang === 'en' ? 'lang-en' : 'lang-id';
-  document.getElementById('btn-id').className = lang === 'id' ? 'active' : '';
-  document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
-}
-const reveals = document.querySelectorAll('.reveal');
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), i * 60);
-      obs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.05 });
-reveals.forEach(el => obs.observe(el));
-</script>
-</body>
-</html>
+                <p class="card-desc" data-id>FMI dan Asosiasi Pemandu Gunung Indonesia (APGI) menandatangani nota kesepahaman untuk bersama-sama mengembangkan ekosistem pendakian Indonesia.</p>
+        <p
