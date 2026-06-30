@@ -164,6 +164,30 @@ footer a:hover { color: var(--red); }
   <button class="filter-btn" data-filter="INTERNASIONAL" onclick="filterNews(this)"><span data-id>Internasional</span><span data-en>International</span></button>
 </div>
 <main class="news-grid">
+<article data-category="INTERNASIONAL" class="news-card news-card--thumb reveal">
+  <div class="card-thumb">
+    <img src="img/045-masherbrum-k1-sejarah-karakoram.jpg" alt="Masherbrum (K1): Ratu Puncak yang Hanya Didaki 15 Orang Sepanjang Sejarah" loading="lazy">
+  </div>
+  <div class="card-content">
+    <div class="card-meta">
+      <span class="card-tag" style="background:#111111">INTERNASIONAL</span>
+      <span class="card-source">ExplorersWeb</span>
+      <span class="card-dot">·</span>
+      <span class="card-date" data-id>29 Juni 2026</span>
+      <span class="card-date" data-en>June 29, 2026</span>
+    </div>
+    <h2 class="card-title">
+      <span data-id>Masherbrum (K1): Ratu Puncak yang Hanya Didaki 15 Orang Sepanjang Sejarah</span>
+      <span data-en>Masherbrum (K1): The Queen of Peaks Summited by Only 15 Climbers in History</span>
+    </h2>
+    <p class="card-desc" data-id>Gunung ke-22 tertinggi di dunia ini hanya berhasil didaki oleh empat ekspedisi sepanjang sejarahnya. Pendakian terakhir yang dikonfirmasi terjadi pada 1985 — 41 tahun lalu. Musim panas 2026, dua tim siap mencoba lagi.</p>
+    <p class="card-desc" data-en>The world's 22nd-highest mountain has been summited by only four expeditions in history, with the last confirmed ascent in 1985 — 41 years ago. Two teams are gearing up to try again in summer 2026.</p>
+    <a class="card-link" href="045-masherbrum-k1-sejarah-karakoram.html" target="_blank">
+      <span data-id>Baca Selengkapnya</span><span data-en>Read More</span>
+      <span class="link-arrow">↗</span>
+    </a>
+  </div>
+</article>
 <article data-category="EKSPEDISI" class="news-card news-card--thumb reveal">
   <div class="card-thumb">
     <img src="img/043-lumbo-himal-first-ascent-nepal-2026.jpg" alt="Tim Nepal Cetak Pendakian Pertama Lumbo Himal 6.250 m" loading="lazy">
@@ -1152,4 +1176,47 @@ footer a:hover { color: var(--red); }
         </div>
         <h2 class="card-title"><span data-id>FMI dan APGI Tanda Tangani MOU Pengembangan Dunia Pendakian</span><span data-en>FMI and APGI Sign MOU on Mountaineering Development</span></h2>
                 <p class="card-desc" data-id>FMI dan Asosiasi Pemandu Gunung Indonesia (APGI) menandatangani nota kesepahaman untuk bersama-sama mengembangkan ekosistem pendakian Indonesia.</p>
-        <p
+        <p class="card-desc" data-en>FMI and APGI signed a memorandum of understanding to jointly develop Indonesia's mountaineering ecosystem.</p>
+        <a class="card-link" href="https://www.detik.com/tag/federasi-mountaineering-indonesia" target="_blank" rel="noopener">
+          <span data-id>Baca Selengkapnya</span><span data-en>Read More</span>
+          <span class="link-arrow">↗</span>
+        </a>
+      </div></article>
+
+</main>
+<footer>
+  <span>© 2026 Federasi Mountaineering Indonesia</span>
+  <a href="https://mountaineering-indonesia.org">mountaineering-indonesia.org</a>
+</footer>
+<script>
+function filterNews(btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  var cat = btn.getAttribute('data-filter');
+  document.querySelectorAll('.news-grid article').forEach(function(a) {
+    if (cat === 'SEMUA' || a.getAttribute('data-category') === cat) {
+      a.style.display = '';
+    } else {
+      a.style.display = 'none';
+    }
+  });
+}
+
+function setLang(lang) {
+  document.body.className = lang === 'en' ? 'lang-en' : 'lang-id';
+  document.getElementById('btn-id').className = lang === 'id' ? 'active' : '';
+  document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
+}
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 60);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.05 });
+reveals.forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
