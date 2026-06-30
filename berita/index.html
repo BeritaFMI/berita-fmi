@@ -92,8 +92,8 @@ nav {
 .card-link:hover { gap: 0.7rem; }
 .link-arrow { font-size: 1rem; }
 
-.reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
-.reveal.visible { opacity: 1; transform: none; }
+@keyframes revealUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.reveal { animation: revealUp 0.5s ease both; }
 
 footer { background: var(--black); color: var(--gray-mid); padding: 1.75rem 2.5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; letter-spacing: 0.05em; flex-wrap: wrap; gap: 0.5rem; }
 footer a { color: var(--gray-mid); text-decoration: none; }
@@ -164,6 +164,54 @@ footer a:hover { color: var(--red); }
   <button class="filter-btn" data-filter="INTERNASIONAL" onclick="filterNews(this)"><span data-id>Internasional</span><span data-en>International</span></button>
 </div>
 <main class="news-grid">
+<article data-category="INTERNASIONAL" class="news-card news-card--thumb reveal">
+  <div class="card-thumb">
+    <img src="img/045-masherbrum-k1-sejarah-karakoram.jpg" alt="Masherbrum (K1): Ratu Puncak yang Hanya Didaki 15 Orang Sepanjang Sejarah" loading="lazy">
+  </div>
+  <div class="card-content">
+    <div class="card-meta">
+      <span class="card-tag" style="background:#111111">INTERNASIONAL</span>
+      <span class="card-source">ExplorersWeb</span>
+      <span class="card-dot">·</span>
+      <span class="card-date" data-id>29 Juni 2026</span>
+      <span class="card-date" data-en>June 29, 2026</span>
+    </div>
+    <h2 class="card-title">
+      <span data-id>Masherbrum (K1): Ratu Puncak yang Hanya Didaki 15 Orang Sepanjang Sejarah</span>
+      <span data-en>Masherbrum (K1): The Queen of Peaks Summited by Only 15 Climbers in History</span>
+    </h2>
+    <p class="card-desc" data-id>Gunung ke-22 tertinggi di dunia ini hanya berhasil didaki oleh empat ekspedisi sepanjang sejarahnya. Pendakian terakhir yang dikonfirmasi terjadi pada 1985 — 41 tahun lalu. Musim panas 2026, dua tim siap mencoba lagi.</p>
+    <p class="card-desc" data-en>The world's 22nd-highest mountain has been summited by only four expeditions in history, with the last confirmed ascent in 1985 — 41 years ago. Two teams are gearing up to try again in summer 2026.</p>
+    <a class="card-link" href="045-masherbrum-k1-sejarah-karakoram.html" target="_blank">
+      <span data-id>Baca Selengkapnya</span><span data-en>Read More</span>
+      <span class="link-arrow">↗</span>
+    </a>
+  </div>
+</article>
+<article data-category="EKSPEDISI" class="news-card news-card--thumb reveal">
+  <div class="card-thumb">
+    <img src="img/043-lumbo-himal-first-ascent-nepal-2026.jpg" alt="Tim Nepal Cetak Pendakian Pertama Lumbo Himal 6.250 m" loading="lazy">
+  </div>
+  <div class="card-content">
+    <div class="card-meta">
+      <span class="card-tag" style="background:#C8102E">EKSPEDISI</span>
+      <span class="card-source">ExplorersWeb</span>
+      <span class="card-dot">·</span>
+      <span class="card-date" data-id>26 Juni 2026</span>
+      <span class="card-date" data-en>June 26, 2026</span>
+    </div>
+    <h2 class="card-title">
+      <span data-id>Tim Nepal Cetak Pendakian Pertama Lumbo Himal 6.250 m</span>
+      <span data-en>Nepali Team Completes First Ascent of Remote Lumbo Himal (6,250m)</span>
+    </h2>
+    <p class="card-desc" data-id>Tim pemandu Nepal dari Himalayan Summit Club berhasil menaklukkan Lumbo Himal (6.250 m) untuk pertama kalinya — sebuah puncak terpencil di antara kawasan Manaslu dan Ganesh Himal yang belum pernah didaki sebelumnya, dengan jalur graded D+ dalam skala alpine Prancis.</p>
+    <p class="card-desc" data-en>A Nepali guide team from Himalayan Summit Club completed the first ascent of Lumbo Himal (6,250m) — a remote, previously unclimbed peak between the Manaslu Conservation Area and the Ganesh Himal Range, graded D+ on the French alpine scale.</p>
+    <a class="card-link" href="043-lumbo-himal-first-ascent-nepal-2026.html" target="_blank">
+      <span data-id>Baca Selengkapnya</span><span data-en>Read More</span>
+      <span class="link-arrow">↗</span>
+    </a>
+  </div>
+</article>
 <article data-category="INTERNASIONAL" class="news-card news-card--thumb reveal">
   <div class="card-thumb">
     <img src="img/042-green-boots-everest-pemulangan-jenazah-2026.jpg" alt="India Siapkan Misi Berisiko Tinggi Evakuasi 'Green Boots' dari Everest" loading="lazy">
@@ -1159,16 +1207,9 @@ function setLang(lang) {
   document.getElementById('btn-id').className = lang === 'id' ? 'active' : '';
   document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
 }
-const reveals = document.querySelectorAll('.reveal');
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), i * 60);
-      obs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.05 });
-reveals.forEach(el => obs.observe(el));
+document.querySelectorAll('.reveal').forEach((el, i) => {
+  el.style.animationDelay = (i * 0.04) + 's';
+});
 </script>
 </body>
-</html>
+</html>                                                                                                                                                                                                                                   
