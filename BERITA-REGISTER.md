@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **043**
+## ⚡ Next Available Number: **044**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 043 | `043-lumbo-himal-first-ascent-nepal-2026.html` | Tim Nepal Cetak Pendakian Pertama Lumbo Himal 6.250 m | 30 Jun 2026 | EKSPEDISI | Claude | Lokal |
 | 042 | `042-green-boots-everest-pemulangan-jenazah-2026.html` | India Siapkan Misi Evakuasi 'Green Boots' dari Everest | 28 Jun 2026 | INTERNASIONAL | Claude | Lokal |
 | 041 | `041-holecek-petrecek-rupal-face-nanga-parbat-2026.html` | Duo Ceko Kembali Tantang Muka Rupal Nanga Parbat | 29 Jun 2026 | EKSPEDISI | Claude | Lokal |
 | 040 | `040-guillaume-pierrel-gugur-k6-karakoram-2026.html` | Alpinis Guillaume Pierrel Gugur di K6, Karakoram | 26 Jun 2026 | EKSPEDISI | Claude | Lokal |
@@ -117,6 +118,4 @@ Setiap kali artikel baru dibuat:
 ```
 
 Jika ada konflik (dua pihak mengambil nomor yang sama secara bersamaan):
-- Pihak yang lebih dulu update register = yang berhak atas nomor itu
-- Pihak lain mengambil nomor berikutnya
-- Tidak perlu rename file yang sudah terlanjur dibuat — nomor di register bisa dikoreksi
+- Pihak yang lebih dulu update register = ya
