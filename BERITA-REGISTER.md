@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **044**
+## ⚡ Next Available Number: **047**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,8 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 046 | `046-drone-ai-temukan-pendaki-hilang-snowy-mountains-2026.html` | Drone AI Temukan Dua Pendaki Hilang dalam 5 Jam di Snowy Mountains | 1 Jul 2026 | KESELAMATAN | Claude | Lokal |
+| 045 | `045-masherbrum-k1-sejarah-karakoram.html` | Masherbrum K1: Ratu Puncak yang Hanya Didaki 15 Orang | 30 Jun 2026 | INTERNASIONAL | Claude | Lokal |
 | 043 | `043-lumbo-himal-first-ascent-nepal-2026.html` | Tim Nepal Cetak Pendakian Pertama Lumbo Himal 6.250 m | 30 Jun 2026 | EKSPEDISI | Claude | Lokal |
 | 042 | `042-green-boots-everest-pemulangan-jenazah-2026.html` | India Siapkan Misi Evakuasi 'Green Boots' dari Everest | 28 Jun 2026 | INTERNASIONAL | Claude | Lokal |
 | 041 | `041-holecek-petrecek-rupal-face-nanga-parbat-2026.html` | Duo Ceko Kembali Tantang Muka Rupal Nanga Parbat | 29 Jun 2026 | EKSPEDISI | Claude | Lokal |
@@ -118,4 +120,4 @@ Setiap kali artikel baru dibuat:
 ```
 
 Jika ada konflik (dua pihak mengambil nomor yang sama secara bersamaan):
-- Pihak yang lebih dulu update register = ya
+- Pihak yang 
