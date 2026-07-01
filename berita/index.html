@@ -164,6 +164,30 @@ footer a:hover { color: var(--red); }
   <button class="filter-btn" data-filter="INTERNASIONAL" onclick="filterNews(this)"><span data-id>Internasional</span><span data-en>International</span></button>
 </div>
 <main class="news-grid">
+<article data-category="KESELAMATAN" class="news-card news-card--thumb reveal">
+  <div class="card-thumb">
+    <img src="img/046-drone-ai-temukan-pendaki-hilang-snowy-mountains-2026.jpg" alt="Drone AI Temukan Dua Pendaki Hilang dalam 5 Jam di Snowy Mountains" loading="lazy">
+  </div>
+  <div class="card-content">
+    <div class="card-meta">
+      <span class="card-tag" style="background:#C8102E">KESELAMATAN</span>
+      <span class="card-source">ExplorersWeb / Fire and Rescue NSW</span>
+      <span class="card-dot">·</span>
+      <span class="card-date" data-id>1 Juli 2026</span>
+      <span class="card-date" data-en>July 1, 2026</span>
+    </div>
+    <h2 class="card-title">
+      <span data-id>Drone AI Temukan Dua Pendaki Hilang dalam 5 Jam di Snowy Mountains</span>
+      <span data-en>AI Drone Finds Two Lost Hikers Within 5 Hours in Australia's Snowy Mountains</span>
+    </h2>
+    <p class="card-desc" data-id>Fire and Rescue NSW berhasil menemukan dua pendaki yang hilang di jalur Dead Horse Gap, Kosciuszko National Park, hanya dalam lima jam berkat drone berteknologi AI dan kamera termal — penyelamatan pertama jenisnya di Australia.</p>
+    <p class="card-desc" data-en>Fire and Rescue NSW located two lost hikers on the Dead Horse Gap trail, Kosciuszko National Park, in just five hours using an AI-powered drone with thermal imaging — Australia's first rescue of its kind.</p>
+    <a class="card-link" href="046-drone-ai-temukan-pendaki-hilang-snowy-mountains-2026.html" target="_blank">
+      <span data-id>Baca Selengkapnya</span><span data-en>Read More</span>
+      <span class="link-arrow">↗</span>
+    </a>
+  </div>
+</article>
 <article data-category="INTERNASIONAL" class="news-card news-card--thumb reveal">
   <div class="card-thumb">
     <img src="img/045-masherbrum-k1-sejarah-karakoram.jpg" alt="Masherbrum (K1): Ratu Puncak yang Hanya Didaki 15 Orang Sepanjang Sejarah" loading="lazy">
@@ -1175,41 +1199,4 @@ footer a:hover { color: var(--red); }
           <span class="card-date" data-en>2020</span>
         </div>
         <h2 class="card-title"><span data-id>FMI dan APGI Tanda Tangani MOU Pengembangan Dunia Pendakian</span><span data-en>FMI and APGI Sign MOU on Mountaineering Development</span></h2>
-                <p class="card-desc" data-id>FMI dan Asosiasi Pemandu Gunung Indonesia (APGI) menandatangani nota kesepahaman untuk bersama-sama mengembangkan ekosistem pendakian Indonesia.</p>
-        <p class="card-desc" data-en>FMI and APGI signed a memorandum of understanding to jointly develop Indonesia's mountaineering ecosystem.</p>
-        <a class="card-link" href="https://www.detik.com/tag/federasi-mountaineering-indonesia" target="_blank" rel="noopener">
-          <span data-id>Baca Selengkapnya</span><span data-en>Read More</span>
-          <span class="link-arrow">↗</span>
-        </a>
-      </div></article>
-
-</main>
-<footer>
-  <span>© 2026 Federasi Mountaineering Indonesia</span>
-  <a href="https://mountaineering-indonesia.org">mountaineering-indonesia.org</a>
-</footer>
-<script>
-function filterNews(btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  var cat = btn.getAttribute('data-filter');
-  document.querySelectorAll('.news-grid article').forEach(function(a) {
-    if (cat === 'SEMUA' || a.getAttribute('data-category') === cat) {
-      a.style.display = '';
-    } else {
-      a.style.display = 'none';
-    }
-  });
-}
-
-function setLang(lang) {
-  document.body.className = lang === 'en' ? 'lang-en' : 'lang-id';
-  document.getElementById('btn-id').className = lang === 'id' ? 'active' : '';
-  document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
-}
-document.querySelectorAll('.reveal').forEach((el, i) => {
-  el.style.animationDelay = (i * 0.04) + 's';
-});
-</script>
-</body>
-</html>                                                                                                                                                                                                                                   
+                <p class="card-desc" data-id>FMI dan Asosiasi Pemandu Gunung Indonesia (APGI) menandatangani nota kesepahaman untuk bersama-sama mengembangkan ekosistem pendakian 
