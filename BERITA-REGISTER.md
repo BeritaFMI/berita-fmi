@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **048**
+## ⚡ Next Available Number: **049**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 048 | `048-gelombang-panas-alpen-bahaya-crevasse-2026.html` | Gelombang Panas Ekstrem Landa Alpen, Bahaya Crevasse Meningkat | 2 Jul 2026 | KESELAMATAN | Claude | Lokal |
 | 047 | `047-bargiel-ski-nanga-parbat-2026.html` | Andrzej Bargiel Ski Turun Nanga Parbat, Genapi 8 Puncak 8.000m | 1 Jul 2026 | INTERNASIONAL | Claude | Lokal |
 | 046 | `046-drone-ai-temukan-pendaki-hilang-snowy-mountains-2026.html` | Drone AI Temukan Dua Pendaki Hilang dalam 5 Jam di Snowy Mountains | 1 Jul 2026 | KESELAMATAN | Claude | Lokal |
 | 045 | `045-masherbrum-k1-sejarah-karakoram.html` | Masherbrum K1: Ratu Puncak yang Hanya Didaki 15 Orang | 30 Jun 2026 | INTERNASIONAL | Claude | Lokal |
@@ -115,4 +116,10 @@ Setiap kali artikel baru dibuat:
 ```
 1. Ambil "Next Available Number" dari atas file ini
 2. Ubah langsung "Next Available Number" = nomor lama + 1
-3. Tambah baris baru di tabel Register deng
+3. Tambah baris baru di tabel Register dengan nomor yang diambil
+4. Simpan file ini
+5. Baru lanjut proses artikel
+```
+
+Jika ada konflik (dua pihak mengambil nomor yang sama secara bersamaan):
+- Pihak yang lebih dulu upd
