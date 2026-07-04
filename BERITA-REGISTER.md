@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **050**
+## ⚡ Next Available Number: **051**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 050 | `050-semeru-tutup-hari-raya-karo-agustus-2026.html` | Gunung Semeru Ditutup 12 Hari untuk Hari Raya Karo | 4 Jul 2026 | KESELAMATAN | Claude | Lokal |
 | 049 | `049-merapi-hoaks-pembukaan-pendakian-2026.html` | TNGM Bantah Hoaks Pembukaan Merapi, Pendakian Tetap Ditutup | 3 Jul 2026 | KESELAMATAN | Claude | Lokal |
 | 048 | `048-gelombang-panas-alpen-bahaya-crevasse-2026.html` | Gelombang Panas Ekstrem Landa Alpen, Bahaya Crevasse Meningkat | 2 Jul 2026 | KESELAMATAN | Claude | Lokal |
 | 047 | `047-bargiel-ski-nanga-parbat-2026.html` | Andrzej Bargiel Ski Turun Nanga Parbat, Genapi 8 Puncak 8.000m | 1 Jul 2026 | INTERNASIONAL | Claude | Lokal |
@@ -123,6 +124,4 @@ Setiap kali artikel baru dibuat:
 ```
 
 Jika ada konflik (dua pihak mengambil nomor yang sama secara bersamaan):
-- Pihak yang lebih dulu update register = yang berhak atas nomor itu
-- Pihak lain mengambil nomor berikutnya
-- Tidak perlu rename file yang sudah terlanjur dibuat — nomor di register bisa dikoreksi
+- Pihak yang lebih dulu update register =
