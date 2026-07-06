@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **053**
+## ⚡ Next Available Number: **054**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 053 | `053-fmi-audiensi-basarnas-kerjasama-sar-2026.html` | PB FMI Audiensi dengan BASARNAS, Kerjasama SAR | 6 Jul 2026 | KERJASAMA | Claude | Lokal |
 | 052 | `052-cazzanelli-zoerer-gasherbrum-iv-the-shining-wall-2026.html` | Tim Elite Italia-Austria Bidik Gasherbrum IV The Shining Wall | 6 Jul 2026 | EKSPEDISI | Claude | Lokal |
 | 051 | `051-fmi-sumsel-talang-kubangan-gunung-patah-2025.html` | FMI Sumsel Hadir di Talang Kubangan, Lereng Gunung Patah | 15 Jun 2025 | PELATIHAN | Manual | Lokal |
 | 050 | `050-semeru-tutup-hari-raya-karo-agustus-2026.html` | Gunung Semeru Ditutup 12 Hari untuk Hari Raya Karo | 4 Jul 2026 | KESELAMATAN | Claude | Lokal |
