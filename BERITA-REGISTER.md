@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **052**
+## ⚡ Next Available Number: **053**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 052 | `052-gasherbrum-iv-cazzanelli-zoerer-shining-wall-2026.html` | Tim Elite Incar Gasherbrum IV "Dinding Berkilau" | 5 Jul 2026 | INTERNASIONAL | Claude | Lokal |
 | 051 | `051-fmi-sumsel-talang-kubangan-gunung-patah-2025.html` | FMI Sumsel Hadir di Talang Kubangan, Lereng Gunung Patah | 15 Jun 2025 | PELATIHAN | Manual | Lokal |
 | 050 | `050-semeru-tutup-hari-raya-karo-agustus-2026.html` | Gunung Semeru Ditutup 12 Hari untuk Hari Raya Karo | 4 Jul 2026 | KESELAMATAN | Claude | Lokal |
 | 049 | `049-merapi-hoaks-pembukaan-pendakian-2026.html` | TNGM Bantah Hoaks Pembukaan Merapi, Pendakian Tetap Ditutup | 3 Jul 2026 | KESELAMATAN | Claude | Lokal |
