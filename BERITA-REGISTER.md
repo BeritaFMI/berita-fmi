@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **055**
+## ⚡ Next Available Number: **056**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 055 | `055-haldan-borglum-rekor-11000ers-rocky-kanada-2026.html` | Eks Biatlet Kanada Cetak Rekor 58 Puncak 11.000 Kaki | 7 Jul 2026 | INTERNASIONAL | Claude | Lokal |
 | 054 | `054-don-hasman-pendiri-fmi-fotografer.html` | Don Hasman: Fotografer, Petualang, Pendiri FMI | 7 Jul 2026 | ORGANISASI | Claude | Lokal |
 | 053 | `053-fmi-audiensi-basarnas-kerjasama-sar-2026.html` | PB FMI Audiensi dengan BASARNAS, Kerjasama SAR | 6 Jul 2026 | KERJASAMA | Claude | Lokal |
 | 052 | `052-cazzanelli-zoerer-gasherbrum-iv-the-shining-wall-2026.html` | Tim Elite Italia-Austria Bidik Gasherbrum IV The Shining Wall | 6 Jul 2026 | EKSPEDISI | Claude | Lokal |
@@ -120,14 +121,4 @@ Artikel berikut saat ini tampil tanpa thumbnail di index.html (memakai card icon
 Setiap kali artikel baru dibuat:
 
 ```
-1. Ambil "Next Available Number" dari atas file ini
-2. Ubah langsung "Next Available Number" = nomor lama + 1
-3. Tambah baris baru di tabel Register dengan nomor yang diambil
-4. Simpan file ini
-5. Baru lanjut proses artikel
-```
-
-Jika ada konflik (dua pihak mengambil nomor yang sama secara bersamaan):
-- Pihak yang lebih dulu update register = yang berhak atas nomor itu
-- Pihak lain mengambil nomor berikutnya
-- Tidak perlu rename file yang sudah terlanjur dibuat — nomor di register bisa dikoreksi
+1. Ambil "Next Avai
