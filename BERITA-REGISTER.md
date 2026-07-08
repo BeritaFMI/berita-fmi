@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **056**
+## ⚡ Next Available Number: **057**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 056 | `056-pakistan-8000m-tanpa-oksigen-2026.html` | Alpinis Karakoram 2026 Tantang K2 & Broad Peak Tanpa Oksigen | 8 Jul 2026 | EKSPEDISI | Claude | Lokal |
 | 055 | `055-haldan-borglum-rekor-11000ers-rocky-kanada-2026.html` | Eks Biatlet Kanada Cetak Rekor 58 Puncak 11.000 Kaki | 7 Jul 2026 | INTERNASIONAL | Claude | Lokal |
 | 054 | `054-don-hasman-pendiri-fmi-fotografer.html` | Don Hasman: Fotografer, Petualang, Pendiri FMI | 7 Jul 2026 | ORGANISASI | Claude | Lokal |
 | 053 | `053-fmi-audiensi-basarnas-kerjasama-sar-2026.html` | PB FMI Audiensi dengan BASARNAS, Kerjasama SAR | 6 Jul 2026 | KERJASAMA | Claude | Lokal |
@@ -111,14 +112,4 @@ Artikel berikut saat ini tampil tanpa thumbnail di index.html (memakai card icon
 | 006 | sekolah-navigasi-eiger-tendon | ❌ Belum ada |
 | 007 | imms-2024-wilderness-medicine | ❌ Belum ada |
 | 008 | bsn-sni-pendakian-gunung | ❌ Belum ada |
-| 009 | protokol-pendakian-covid19 | ❌ Belum ada |
-| 010 | fmi-apgi-mou-pendakian | ❌ Belum ada |
-
----
-
-## Cara Update Register (Prosedur Standar)
-
-Setiap kali artikel baru dibuat:
-
-```
-1. Ambil "Next Avai
+| 009 | protokol-pendakian-covid19 | ❌ Belum ad
