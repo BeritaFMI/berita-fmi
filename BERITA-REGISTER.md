@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **058**
+## ⚡ Next Available Number: **059**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 058 | `058-liliya-ianovskaia-wanita-tertua-nanga-parbat-2026.html` | Liliya Ianovskaia, 66, Wanita Tertua Penakluk Nanga Parbat | 9 Jul 2026 | INTERNASIONAL | Claude | Lokal |
 | 057 | `057-buyung-lalana-jenderal-terumbu-karang-fmi.html` | Sang Jenderal Terumbu Karang: Buyung Lalana dan Jalan Panjang dari Laut ke Gunung | 8 Jul 2026 | ORGANISASI | Claude | Lokal |
 | 056 | `056-pakistan-8000m-tanpa-oksigen-2026.html` | Alpinis Karakoram 2026 Tantang K2 & Broad Peak Tanpa Oksigen | 8 Jul 2026 | EKSPEDISI | Claude | Lokal |
 | 055 | `055-haldan-borglum-rekor-11000ers-rocky-kanada-2026.html` | Eks Biatlet Kanada Cetak Rekor 58 Puncak 11.000 Kaki | 7 Jul 2026 | INTERNASIONAL | Claude | Lokal |
@@ -107,7 +108,4 @@ Artikel berikut saat ini tampil tanpa thumbnail di index.html (memakai card icon
 | No | Slug/Label | Status Gambar |
 |----|-----------|--------------|
 | 002 | carstensz-mou-pma-fmi | ❌ Belum ada |
-| 003 | kemenhut-grade-jalur-pendakian | ❌ Belum ada |
-| 004 | fmi-imgs-klasifikasi-gunung | ❌ Belum ada |
-| 005 | fmi-keselamatan-sop-pendakian | ❌ Belum ada |
-| 006 | sekolah-naviga
+| 003 | kem
