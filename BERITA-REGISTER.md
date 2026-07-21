@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **061**
+## ⚡ Next Available Number: **062**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 061 | `061-uiaa-general-assembly-2026-kathmandu.html` | UIAA Gelar Sidang Umum 2026 di Kathmandu, Mengenal Badan Dunia Pendakian | 21 Jul 2026 | INTERNASIONAL | Claude | Lokal |
 | 060 | `060-fmi-jabar-pernyataan-sikap-keselamatan-pendakian.html` | FMI Jabar Serukan Enam Temuan Keselamatan Pendakian, Dorong BMLS | 21 Jul 2026 | ORGANISASI | Claude | Lokal |
 | 059 | `059-khansa-syahlaa-pengurus-pb-fmi-seven-summits.html` | Khansa Syahlaa, Pengurus Muda PB FMI Menuju Seven Summits | 21 Jul 2026 | ORGANISASI | Claude | Lokal |
 | 058 | `058-liliya-ianovskaia-wanita-tertua-nanga-parbat-2026.html` | Liliya Ianovskaia, 66, Wanita Tertua Penakluk Nanga Parbat | 9 Jul 2026 | INTERNASIONAL | Claude | Lokal |
