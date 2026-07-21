@@ -108,4 +108,30 @@ Artikel berikut saat ini tampil tanpa thumbnail di index.html (memakai card icon
 | No | Slug/Label | Status Gambar |
 |----|-----------|--------------|
 | 002 | carstensz-mou-pma-fmi | ❌ Belum ada |
-| 003 | kem
+| 003 | kemenhut-grade-jalur-pendakian | ❌ Belum ada |
+| 004 | fmi-imgs-klasifikasi-gunung | ❌ Belum ada |
+| 005 | fmi-keselamatan-sop-pendakian | ❌ Belum ada |
+| 006 | sekolah-navigasi-eiger-tendon | ❌ Belum ada |
+| 007 | imms-2024-wilderness-medicine | ❌ Belum ada |
+| 008 | bsn-sni-pendakian-gunung | ❌ Belum ada |
+| 009 | protokol-pendakian-covid19 | ❌ Belum ada |
+| 010 | fmi-apgi-mou-pendakian | ❌ Belum ada |
+
+---
+
+## Cara Update Register (Prosedur Standar)
+
+Setiap kali artikel baru dibuat:
+
+```
+1. Ambil "Next Available Number" dari atas file ini
+2. Ubah langsung "Next Available Number" = nomor lama + 1
+3. Tambah baris baru di tabel Register dengan nomor yang diambil
+4. Simpan file ini
+5. Baru lanjut proses artikel
+```
+
+Jika ada konflik (dua pihak mengambil nomor yang sama secara bersamaan):
+- Pihak yang lebih dulu update register = yang berhak atas nomor itu
+- Pihak lain mengambil nomor berikutnya
+- Tidak perlu rename file yang sudah terlanjur dibuat — nomor di register bisa dikoreksi
