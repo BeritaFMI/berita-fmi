@@ -17,7 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
-| 063 | `063-nirmal-purja-longsoran-broad-peak.html` | Nirmal Purja: Sehebat Apa Pun Manusia, Bahaya dari Alam Tak Bisa Ditahan | 1 Agu 2026 | INTERNASIONAL | Claude | Lokal |
+| 063 | `063-nirmal-purja-longsoran-broad-peak.html` | Nirmal Purja Wafat di Broad Peak, Direnggut Bahaya Alam yang Tak Terhindarkan | 1 Agu 2026 | INTERNASIONAL | Claude | Lokal |
 | 062 | `062-turki-pemulihan-gempa-perspektif-kebencanaan.html` | Tiga Tahun Setelah Gempa "Bencana Abad Ini", Kondisi Turki Kini | 29 Jul 2026 | INTERNASIONAL | Claude | Lokal |
 | 061 | `061-uiaa-general-assembly-2026-kathmandu.html` | UIAA Gelar Sidang Umum 2026 di Kathmandu, Mengenal Badan Dunia Pendakian | 21 Jul 2026 | INTERNASIONAL | Claude | Lokal |
 | 060 | `060-fmi-jabar-pernyataan-sikap-keselamatan-pendakian.html` | FMI Jabar Serukan Enam Temuan Keselamatan Pendakian, Dorong BMLS | 21 Jul 2026 | ORGANISASI | Claude | Lokal |
