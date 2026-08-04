@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **064**
+## ⚡ Next Available Number: **065**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 064 | `064-keselamatan-pendakian-bondowoso-turki.html` | Keselamatan Pendakian, Bukan Lelucon: Pelajaran dari Bondowoso dan Turki | 4 Agu 2026 | KESELAMATAN | Claude | Lokal |
 | 063 | `063-nirmal-purja-longsoran-broad-peak.html` | Nirmal Purja Wafat di Broad Peak, Direnggut Bahaya Alam yang Tak Terhindarkan | 1 Agu 2026 | INTERNASIONAL | Claude | Lokal |
 | 062 | `062-turki-pemulihan-gempa-perspektif-kebencanaan.html` | Tiga Tahun Setelah Gempa "Bencana Abad Ini", Kondisi Turki Kini | 29 Jul 2026 | INTERNASIONAL | Claude | Lokal |
 | 061 | `061-uiaa-general-assembly-2026-kathmandu.html` | UIAA Gelar Sidang Umum 2026 di Kathmandu, Mengenal Badan Dunia Pendakian | 21 Jul 2026 | INTERNASIONAL | Claude | Lokal |
