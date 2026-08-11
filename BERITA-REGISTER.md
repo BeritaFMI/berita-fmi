@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **067**
+## ⚡ Next Available Number: **066**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,8 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
-| 066 | `066-green-canyon-pangandaran-cukang-taneuh.html` | Green Canyon Pangandaran: Menyusuri Keindahan Cukang Taneuh | 11 Agu 2026 | LINGKUNGAN | Naskah Ketum PB FMI | Lokal |
-| 065 | `065-gunung-kerinci-panduan-pendakian.html` | Gunung Kerinci: Panduan Pendakian Puncak Tertinggi Sumatera | 11 Agu 2026 | KESELAMATAN | Naskah Ketum PB FMI | Lokal |
+| 065 | `065-panduan-alam-ketua-umum-pb-fmi.html` | Gunung Kerinci dan Green Canyon Pangandaran: Panduan Alam dari Ketua Umum PB FMI | 11 Agu 2026 | KESELAMATAN | Naskah Ketum PB FMI | Lokal |
 | 064 | `064-keselamatan-pendakian-bondowoso-turki.html` | Keselamatan Pendakian, Bukan Lelucon: Pelajaran dari Bondowoso dan Turki | 4 Agu 2026 | KESELAMATAN | Claude | Lokal |
 | 063 | `063-nirmal-purja-longsoran-broad-peak.html` | Nirmal Purja Wafat di Broad Peak, Direnggut Bahaya Alam yang Tak Terhindarkan | 1 Agu 2026 | INTERNASIONAL | Claude | Lokal |
 | 062 | `062-turki-pemulihan-gempa-perspektif-kebencanaan.html` | Tiga Tahun Setelah Gempa "Bencana Abad Ini", Kondisi Turki Kini | 29 Jul 2026 | INTERNASIONAL | Claude | Lokal |
