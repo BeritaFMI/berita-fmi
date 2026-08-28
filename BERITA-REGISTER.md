@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **067**
+## ⚡ Next Available Number: **068**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 067 | `067-nepal-china-banjir-bandang-gletser.html` | Banjir Bandang Nepal-China: Longsor Es-Batuan Gletser Timpa Jalur Pendakian Himalaya | 28 Agu 2026 | INTERNASIONAL | Manual (prinsipal) | Lokal |
 | 066 | `066-khansa-syahlaa-lenin-peak.html` | Khansa Syahlaa Ungkap Perjuangan Ekspedisi Lenin Peak 7.134 Mdpl | 22 Agu 2026 | EKSPEDISI | Manual (naskah prinsipal) | Lokal |
 | 065 | `065-panduan-alam-ketua-umum-pb-fmi.html` | Gunung Kerinci dan Green Canyon Pangandaran: Panduan Alam dari Ketua Umum PB FMI | 11 Agu 2026 | KESELAMATAN | Naskah Ketum PB FMI | Lokal |
 | 064 | `064-keselamatan-pendakian-bondowoso-turki.html` | Keselamatan Pendakian, Bukan Lelucon: Pelajaran dari Bondowoso dan Turki | 4 Agu 2026 | KESELAMATAN | Claude | Lokal |
