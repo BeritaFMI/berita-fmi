@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **069**
+## ⚡ Next Available Number: **070**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 069 | `069-dies-natalis-kemenpora-mountaineering.html` | Dies Natalis FMI ke-21: Kemenpora Dorong Mountaineering Perkuat Olahraga Masyarakat dan Industri Olahraga | 30 Agu 2026 | KERJASAMA | Manual (naskah prinsipal) | Lokal |
 | 068 | `068-dies-natalis-fmi-ke-21.html` | Dies Natalis FMI Ke-21: Perkuat Komitmen Gunung Bersih dan Keselamatan Pendakian | 28 Agu 2026 | ORGANISASI | Manual (naskah prinsipal) | Lokal |
 | 067 | `067-nepal-china-banjir-bandang-gletser.html` | Banjir Bandang Nepal-China: Longsor Es-Batuan Gletser Timpa Jalur Pendakian Himalaya | 28 Agu 2026 | INTERNASIONAL | Manual (prinsipal) | Lokal |
 | 066 | `066-khansa-syahlaa-lenin-peak.html` | Khansa Syahlaa Ungkap Perjuangan Ekspedisi Lenin Peak 7.134 Mdpl | 22 Agu 2026 | EKSPEDISI | Manual (naskah prinsipal) | Lokal |
