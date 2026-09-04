@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **071**
+## ⚡ Next Available Number: **072**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 071 | `071-fmi-fpti-bahas-associate-member-uiaa.html` | PB FMI dan PP FPTI Bahas Langkah FMI Menjadi Associate Member UIAA | 4 Sep 2026 | INTERNASIONAL | Manual (naskah prinsipal) | Lokal |
 | 070 | `070-fmi-brin-pelatihan-remote-extreme-environment.html` | FMI dan BRIN Gelar Pelatihan Remote and Extreme Environment di Cibinong | 30 Agu 2026 | PELATIHAN | Manual (naskah prinsipal) | Lokal |
 | 069 | `069-dies-natalis-kemenpora-mountaineering.html` | Dies Natalis FMI ke-21: Kemenpora Dorong Mountaineering Perkuat Olahraga Masyarakat dan Industri Olahraga | 30 Agu 2026 | KERJASAMA | Manual (naskah prinsipal) | Lokal |
 | 068 | `068-dies-natalis-fmi-ke-21.html` | Dies Natalis FMI Ke-21: Perkuat Komitmen Gunung Bersih dan Keselamatan Pendakian | 28 Agu 2026 | ORGANISASI | Manual (naskah prinsipal) | Lokal |
