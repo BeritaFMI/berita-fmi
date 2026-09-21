@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **073**
+## ⚡ Next Available Number: **074**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 073 | `073-fmi-maluku-sharing-session-zero-waste-zero-accident.html` | Sharing Session Dies Natalis FMI ke-21: FMI Maluku Dorong Budaya Zero Waste dan Zero Accident | 21 Sep 2026 | KESELAMATAN | Manual (sumber liputan potretmaluku.id) | Lokal |
 | 072 | `072-sar-unhas-seminar-kebencanaan-perpusnas.html` | Seminar 40 Tahun SAR Unhas di Perpusnas, Standar Kompetensi Relawan Jadi Usulan | 21 Sep 2026 | KESELAMATAN | Claude (bahan prinsipal) | Lokal |
 | 071 | `071-fmi-fpti-bahas-associate-member-uiaa.html` | PB FMI dan PP FPTI Bahas Langkah FMI Menjadi Associate Member UIAA | 4 Sep 2026 | INTERNASIONAL | Manual (naskah prinsipal) | Lokal |
 | 070 | `070-fmi-brin-pelatihan-remote-extreme-environment.html` | FMI dan BRIN Gelar Pelatihan Remote and Extreme Environment di Cibinong | 30 Agu 2026 | PELATIHAN | Manual (naskah prinsipal) | Lokal |
