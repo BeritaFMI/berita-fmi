@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **076**
+## ⚡ Next Available Number: **077**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 076 | `076-uji-tayang-jalur-panel-redaksi-fmi.html` | Uji Tayang Jalur Panel Redaksi FMI | 7 Okt 2026 | ORGANISASI | Panel redaksi (Operator Berita) | Lokal |
 | 075 | `075-tes-berita.html` | Tes berita | 7 Okt 2026 | KESELAMATAN | Panel redaksi (Tim Media FMI) | Lokal |
 | 074 | `074-ebulobo-nagekeo-terpencil-pascagempa.html` | Gunung Ebulobo dan Wajah Terpencil Nagekeo Setelah Gempa M7,7 | 26 Sep 2026 | KESELAMATAN | Manual (bahan & foto Prinsipal) | Lokal |
 | 073 | `073-fmi-maluku-sharing-session-zero-waste-zero-accident.html` | Sharing Session Dies Natalis FMI ke-21: FMI Maluku Dorong Budaya Zero Waste dan Zero Accident | 21 Sep 2026 | KESELAMATAN | Manual (sumber liputan potretmaluku.id) | Lokal |
