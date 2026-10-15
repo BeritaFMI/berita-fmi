@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **077**
+## ⚡ Next Available Number: **078**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 077 | `077-wakil-ketua-pb-fmi-terima-brevet-kehormatan-paspampres.html` | Wakil Ketua PB FMI Terima Brevet Kehormatan Paspampres | 14 Okt 2026 | KERJASAMA | Manual (bahan & foto Prinsipal) | Lokal |
 | 076 | `076-polres-mimika-tunda-penerbangan-carstensz-kabut-asap.html` | Kabut Asap Karhutla, Penerbangan ke Jalur Pendakian Carstensz Pyramid Ditunda Sementara | 13 Okt 2026 | KESELAMATAN | Manual (bahan & dokumen Prinsipal) | Lokal |
 | 075 | `075-fmi-dki-jakarta-wilderness-first-aid-batch-3.html` | FMI DKI Jakarta Gelar Wilderness First Aid Batch 3 di Kalibata | 12 Okt 2026 | PELATIHAN | Manual (sumber liputan kabarindo.com) | Lokal |
 | 074 | `074-ebulobo-nagekeo-terpencil-pascagempa.html` | Gunung Ebulobo dan Wajah Terpencil Nagekeo Setelah Gempa M7,7 | 26 Sep 2026 | KESELAMATAN | Manual (bahan & foto Prinsipal) | Lokal |
