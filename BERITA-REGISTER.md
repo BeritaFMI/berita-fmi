@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **079**
+## ⚡ Next Available Number: **080**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 079 | `079-fmi-jatim-prc-diklat-vertical-rescue-sidoarjo.html` | FMI Jatim dan PRC Latih 100 Penyelamat Lewat Diklat Vertical Rescue di Sidoarjo | 18 Okt 2026 | PELATIHAN | Manual (sumber liputan tribrata.tv & rakyatjelata.com) | Lokal |
 | 078 | `078-anak-di-jalur-pendakian-batas-usia-dan-tanggung-jawab-rombongan.html` | Anak di Jalur Pendakian: Batas Usia, Batas Ketinggian, dan Tanggung Jawab Rombongan | 17 Okt 2026 | KESELAMATAN | Manual (riset dokumen & pemberitaan) | Lokal |
 | 077 | `077-wakil-ketua-pb-fmi-terima-brevet-kehormatan-paspampres.html` | Wakil Ketua PB FMI Terima Brevet Kehormatan Paspampres | 14 Okt 2026 | KERJASAMA | Manual (bahan & foto Prinsipal) | Lokal |
 | 076 | `076-polres-mimika-tunda-penerbangan-carstensz-kabut-asap.html` | Kabut Asap Karhutla, Penerbangan ke Jalur Pendakian Carstensz Pyramid Ditunda Sementara | 13 Okt 2026 | KESELAMATAN | Manual (bahan & dokumen Prinsipal) | Lokal |
