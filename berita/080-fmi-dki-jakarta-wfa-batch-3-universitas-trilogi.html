@@ -64,19 +64,43 @@ nav { position: sticky; top: 0; z-index: 100; background: var(--black); display:
 .article-figure { margin: 2.5rem 0; }
 .article-figure img { width: 100%; display: block; border: 1px solid var(--gray-light); }
 .article-figure figcaption { font-size: 0.82rem; color: var(--gray-mid); font-style: italic; margin-top: 0.6rem; }
-/* Layout slide: teks + foto berdampingan */
-.article-wrap { max-width: 1040px; }
-.article-body { display: block; }
-.slide-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2.25rem; align-items: start; margin: 0 0 2rem; }
-.slide-row--media-left { grid-template-columns: 1fr 1fr; }
-.slide-text p:last-child { margin-bottom: 0; }
-.slide-media { margin: 0; }
-.slide-media img { width: 100%; height: auto; display: block; border: 1px solid var(--gray-light); }
-.slide-media figcaption { font-size: .78rem; line-height: 1.5; color: var(--gray-mid); font-style: italic; margin-top: .55rem; }
-.slide-media figcaption span { display: block; }
-@media (max-width: 860px) {
-  .slide-row, .slide-row--media-left { grid-template-columns: 1fr; gap: 1.1rem; }
-  .slide-row--media-left .slide-media { order: -1; }
+/* Galeri geser (pola IHSC): scroll-snap + thumbnail + tombol */
+.gallery { margin: 0 0 2.25rem; min-width: 0; }
+.gallery-stage { position: relative; min-width: 0; }
+.gallery-main {
+  position: relative; display: flex; align-items: flex-start;
+  overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none; border-radius: 4px;
+  border: 1px solid var(--gray-light); background: var(--black);
+}
+.gallery-main::-webkit-scrollbar { display: none; }
+.gallery-slide { position: relative; flex: 0 0 100%; scroll-snap-align: start; display: flex; flex-direction: column; }
+.gallery-slide img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.gallery-cap { margin: 0; padding: .6rem .9rem; background: var(--white-off); border-top: 1px solid var(--gray-light);
+  color: var(--gray-mid); font-size: .8rem; font-style: italic; line-height: 1.5; }
+.gallery-count { position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,.6); color: #fff;
+  font-size: .72rem; font-weight: 500; letter-spacing: .06em; padding: .25rem .6rem; border-radius: 99px; }
+.gallery-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px;
+  display: grid; place-items: center; border: none; border-radius: 50%; background: rgba(0,0,0,.42);
+  color: #fff; cursor: pointer; z-index: 3; transition: background .18s, opacity .18s; }
+.gallery-nav svg { width: 20px; height: 20px; fill: currentColor; }
+.gallery-nav:hover { background: var(--red); }
+.gallery-nav:disabled { opacity: .3; cursor: default; }
+.gallery-nav--prev { left: 12px; }
+.gallery-nav--next { right: 12px; }
+.gallery-thumbs { display: flex; gap: 8px; margin-top: 10px; width: 100%; min-width: 0;
+  overflow-x: auto; overflow-y: hidden; padding: 2px 2px 4px; -webkit-overflow-scrolling: touch; }
+.gallery-thumbs button { flex: 0 0 96px; padding: 0; border: 2px solid transparent; border-radius: 3px;
+  background: none; cursor: pointer; overflow: hidden; opacity: .6; transition: opacity .18s, border-color .18s; }
+.gallery-thumbs button img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.gallery-thumbs button:hover { opacity: 1; }
+.gallery-thumbs button.is-active { border-color: var(--red); opacity: 1; }
+@media (max-width: 700px) {
+  .gallery-nav { width: 34px; height: 34px; }
+  .gallery-nav svg { width: 17px; height: 17px; }
+  .gallery-nav--prev { left: 8px; }
+  .gallery-nav--next { right: 8px; }
+  .gallery-thumbs button { flex: 0 0 76px; }
 }
 footer { background: var(--black); padding: 2rem 2.5rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); }
 footer span, footer a { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-decoration: none; }
@@ -114,49 +138,52 @@ footer a:hover { color: var(--red); }
   <h1 class="article-title" data-id>WFA Batch 3 di Universitas Trilogi Usai, Mentor Berpesan: Yang Penting Kita Bisa Pulang dengan Selamat</h1>
   <h1 class="article-title" data-en>Wilderness First Aid Batch 3 Wraps Up at Universitas Trilogi, Mentor's Message: The Key Is Getting Home Safely</h1>
 </div>
-<div class="article-photo">
-  <img src="img/080-fmi-dki-jakarta-wfa-batch-3-universitas-trilogi.jpg" alt="Seorang pria berbicara dengan mikrofon di depan spanduk Wilderness First Aid FMI DKI Jakarta, dua orang berdiri di sampingnya.">
-</div>
-<div class="article-caption">
-  <span data-id>Sambutan pada kegiatan Wilderness First Aid Batch 3 FMI DKI Jakarta di Universitas Trilogi, Jakarta Selatan, Sabtu, 17 Oktober 2026. (Dokumentasi FMI DKI Jakarta)</span>
-  <span data-en>Remarks at Wilderness First Aid Batch 3 held by FMI DKI Jakarta at Universitas Trilogi, South Jakarta, Saturday, October 17, 2026. (FMI DKI Jakarta documentation)</span>
-</div>
 <div class="article-wrap">
   <div class="article-body">
-    <div class="slide-row">
-      <div class="slide-text">
-        <p data-id>JAKARTA, Berita FMI - Universitas Trilogi, Jakarta Selatan, jadi tempat belajar menolong pada Sabtu, 17 Oktober 2026. FMI DKI Jakarta menggelar Wilderness First Aid (WFA) Batch 3, kegiatan pertolongan pertama di alam terbuka yang didukung Eiger.</p>
-        <p data-en>JAKARTA, Berita FMI - Universitas Trilogi in South Jakarta became a place to learn how to help others on Saturday, October 17, 2026. FMI DKI Jakarta held Wilderness First Aid (WFA) Batch 3, a first aid training for the outdoors supported by Eiger.</p>
-        <p data-id>Peserta belajar prinsip dasar pertolongan pertama. Mereka juga dilatih mengenali kondisi yang harus segera ditangani, lalu mengambil langkah aman sebelum bantuan medis datang. Sesi praktik penanganan korban menutup rangkaian materi.</p>
-        <p data-en>Participants learned the basic principles of first aid. They were also trained to recognise conditions that need immediate care, then to take safe steps before professional medical help arrives. A practice session on handling casualties closed the material.</p>
+    <figure class="gallery" data-gallery>
+  <div class="gallery-stage">
+    <div class="gallery-main">
+      <div class="gallery-slide">
+        <img src="img/080-fmi-dki-jakarta-wfa-batch-3-universitas-trilogi.jpg" alt="Seorang pria berbicara dengan mikrofon di depan spanduk Wilderness First Aid FMI DKI Jakarta, dua orang berdiri di sampingnya." loading="lazy">
+        <figcaption class="gallery-cap"><span data-id>Sambutan pada kegiatan Wilderness First Aid Batch 3 FMI DKI Jakarta di Universitas Trilogi, Jakarta Selatan, Sabtu, 17 Oktober 2026. (Dokumentasi FMI DKI Jakarta)</span><span data-en>Remarks at Wilderness First Aid Batch 3 held by FMI DKI Jakarta at Universitas Trilogi, South Jakarta, Saturday, October 17, 2026. (FMI DKI Jakarta documentation)</span></figcaption>
       </div>
-      <figure class="slide-media">
-          <img src="img/080-praktik-manekin.jpg" alt="Peserta berjongkok mengelilingi manekin dalam wadah oranye saat sesi praktik pertolongan pertama, peserta lain menyaksikan dari kursi.">
-          <figcaption><span data-id>Peserta berlatih penanganan korban dengan manekin pada sesi praktik WFA Batch 3 di Universitas Trilogi. (Dokumentasi FMI DKI Jakarta)</span><span data-en>Participants practise casualty care with a mannequin during the WFA Batch 3 practice session at Universitas Trilogi. (FMI DKI Jakarta documentation)</span></figcaption>
-        </figure>
-    </div>
-    <div class="slide-row slide-row--media-left">
-      <figure class="slide-media">
-          <img src="img/080-foto-bersama.jpg" alt="Foto bersama peserta dan pengurus di aula, dengan spanduk Eiger dan FMI DKI Jakarta di belakang.">
-          <figcaption><span data-id>Peserta dan pengurus FMI DKI Jakarta berfoto bersama setelah kegiatan WFA Batch 3. (Dokumentasi FMI DKI Jakarta)</span><span data-en>Participants and FMI DKI Jakarta board members pose together after WFA Batch 3. (FMI DKI Jakarta documentation)</span></figcaption>
-        </figure>
-      <div class="slide-text">
-        <p data-id>Kemampuan ini penting karena bantuan medis di alam bebas tidak selalu cepat datang. Jarak, cuaca, dan medan ikut menentukan berapa lama pertolongan lanjutan bisa dijangkau. Karena itu, keputusan di lokasi kejadian memegang peranan besar.</p>
-        <p data-en>The skill matters because medical help in the outdoors does not always come quickly. Distance, weather and terrain help decide how long further care takes to reach. The decisions made at the scene therefore carry a lot of weight.</p>
-        <p data-id>Yang ikut bukan hanya pendaki. Peserta datang dari Sispala dan Mapala, sampai ibu rumah tangga. Ketua Bidang Pemuda dan Olahraga KNPI Sumardi memberi ucapan selamat dan berharap kegiatan seperti ini makin sering diadakan.</p>
-        <p data-en>Not everyone who joined was a climber. Participants came from student outdoor clubs, Sispala and Mapala, as well as housewives. Sumardi, head of the youth and sports division at KNPI, offered his congratulations and hoped more events like this will be held.</p>
+      <div class="gallery-slide">
+        <img src="img/080-praktik-manekin.jpg" alt="Peserta berjongkok mengelilingi manekin dalam wadah oranye saat sesi praktik pertolongan pertama, peserta lain menyaksikan dari kursi." loading="lazy">
+        <figcaption class="gallery-cap"><span data-id>Peserta berlatih penanganan korban dengan manekin pada sesi praktik WFA Batch 3. (Dokumentasi FMI DKI Jakarta)</span><span data-en>Participants practise casualty care with a mannequin during the WFA Batch 3 practice session. (FMI DKI Jakarta documentation)</span></figcaption>
+      </div>
+      <div class="gallery-slide">
+        <img src="img/080-foto-bersama.jpg" alt="Foto bersama peserta dan pengurus di aula, dengan spanduk Eiger dan FMI DKI Jakarta di belakang." loading="lazy">
+        <figcaption class="gallery-cap"><span data-id>Peserta dan pengurus FMI DKI Jakarta berfoto bersama setelah kegiatan WFA Batch 3. (Dokumentasi FMI DKI Jakarta)</span><span data-en>Participants and FMI DKI Jakarta board members pose together after WFA Batch 3. (FMI DKI Jakarta documentation)</span></figcaption>
       </div>
     </div>
+    <button type="button" class="gallery-nav gallery-nav--prev" aria-label="Foto sebelumnya / Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 4.6 8 12l7.4 7.4 1.6-1.6L11.2 12l5.8-5.8z"/></svg></button>
+    <button type="button" class="gallery-nav gallery-nav--next" aria-label="Foto berikutnya / Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 4.6 16 12l-7.4 7.4L7 17.8 12.8 12 7 6.2z"/></svg></button>
+    <span class="gallery-count">1 / 3</span>
+  </div>
+  <div class="gallery-thumbs" role="group" aria-label="Pilih foto / Choose photo">
+    <button type="button" class="is-active" aria-label="Foto 1"><img src="img/080-fmi-dki-jakarta-wfa-batch-3-universitas-trilogi.jpg" alt=""></button>
+    <button type="button" class="" aria-label="Foto 2"><img src="img/080-praktik-manekin.jpg" alt=""></button>
+    <button type="button" class="" aria-label="Foto 3"><img src="img/080-foto-bersama.jpg" alt=""></button>
+  </div>
+</figure>
+    <p data-id>JAKARTA, Berita FMI - Universitas Trilogi, Jakarta Selatan, jadi tempat belajar menolong pada Sabtu, 17 Oktober 2026. FMI DKI Jakarta menggelar Wilderness First Aid (WFA) Batch 3, kegiatan pertolongan pertama di alam terbuka yang didukung Eiger.</p>
+    <p data-en>JAKARTA, Berita FMI - Universitas Trilogi in South Jakarta became a place to learn how to help others on Saturday, October 17, 2026. FMI DKI Jakarta held Wilderness First Aid (WFA) Batch 3, a first aid training for the outdoors supported by Eiger.</p>
+    <p data-id>Peserta belajar prinsip dasar pertolongan pertama. Mereka juga dilatih mengenali kondisi yang harus segera ditangani, lalu mengambil langkah aman sebelum bantuan medis datang. Sesi praktik penanganan korban menutup rangkaian materi.</p>
+    <p data-en>Participants learned the basic principles of first aid. They were also trained to recognise conditions that need immediate care, then to take safe steps before professional medical help arrives. A practice session on handling casualties closed the material.</p>
+    <p data-id>Kemampuan ini penting karena bantuan medis di alam bebas tidak selalu cepat datang. Jarak, cuaca, dan medan ikut menentukan berapa lama pertolongan lanjutan bisa dijangkau. Karena itu, keputusan di lokasi kejadian memegang peranan besar.</p>
+    <p data-en>The skill matters because medical help in the outdoors does not always come quickly. Distance, weather and terrain help decide how long further care takes to reach. The decisions made at the scene therefore carry a lot of weight.</p>
+    <p data-id>Yang ikut bukan hanya pendaki. Peserta datang dari Sispala dan Mapala, sampai ibu rumah tangga. Ketua Bidang Pemuda dan Olahraga KNPI Sumardi memberi ucapan selamat dan berharap kegiatan seperti ini makin sering diadakan.</p>
+    <p data-en>Not everyone who joined was a climber. Participants came from student outdoor clubs, Sispala and Mapala, as well as housewives. Sumardi, head of the youth and sports division at KNPI, offered his congratulations and hoped more events like this will be held.</p>
     <p data-id>Ketua Umum FMI DKI Jakarta Catur Sigit Prabowo menyoroti naiknya jumlah pendaki. Menurut dia, kecelakaan ikut naik. Kegiatan ini diadakan untuk menekan risiko itu. Edukasi pertolongan pertama disebut bagian dari budaya keselamatan dan tanggap darurat.</p>
-        <p data-en>Chairman of FMI DKI Jakarta Catur Sigit Prabowo pointed to the growing number of climbers. In his view, accidents have risen too. The event was held to reduce that risk. First aid education, he said, is part of a safety and emergency response culture.</p>
+    <p data-en>Chairman of FMI DKI Jakarta Catur Sigit Prabowo pointed to the growing number of climbers. In his view, accidents have risen too. The event was held to reduce that risk. First aid education, he said, is part of a safety and emergency response culture.</p>
     <p data-id>Kegiatan itu juga dihadiri pengurus PB FMI. Sekretaris Jenderal PB FMI dr. M. Iqbal El Mubarak, Sp.B meminta peserta terus belajar WFA. Menurut dia, ilmu ini penting bagi siapa pun yang berkegiatan di alam bebas, dan pendaki di berbagai negara mempelajarinya.</p>
-        <p data-en>The event was also attended by PB FMI board members. Secretary General of PB FMI dr. M. Iqbal El Mubarak, Sp.B asked participants to keep learning WFA. He said the knowledge matters for anyone active in the outdoors, and climbers around the world study it.</p>
+    <p data-en>The event was also attended by PB FMI board members. Secretary General of PB FMI dr. M. Iqbal El Mubarak, Sp.B asked participants to keep learning WFA. He said the knowledge matters for anyone active in the outdoors, and climbers around the world study it.</p>
     <p data-id>Wakil Sekretaris Jenderal PB FMI Kolonel Marinir Arief Rahman Hakim berharap WFA terus berkembang. Ia melihat kegiatan ini bisa membentuk generasi muda yang peduli bantuan bencana di wilayah Ring of Fire. Ke depan, kegiatan serupa dibuka untuk kerja sama dengan BRIN, Basarnas, dan BNPB.</p>
-        <p data-en>Deputy Secretary General of PB FMI Colonel (Marine) Arief Rahman Hakim hoped WFA will keep growing. He sees the training as a way to shape young people who care about disaster relief in the Ring of Fire region. In the future, similar activities can be opened for cooperation with BRIN, Basarnas and BNPB.</p>
+    <p data-en>Deputy Secretary General of PB FMI Colonel (Marine) Arief Rahman Hakim hoped WFA will keep growing. He sees the training as a way to shape young people who care about disaster relief in the Ring of Fire region. In the future, similar activities can be opened for cooperation with BRIN, Basarnas and BNPB.</p>
     <p data-id>Ketua Pelaksana WFA Batch 3 Abdul Qahhar Amal berharap peserta menyerap ilmunya. Mentor kegiatan, coach Onye, menaruh harapan lebih jauh, yaitu dunia mountaineering yang lebih aman atau zero accident. "Setidaknya tidak sampai menimbulkan korban jiwa," katanya. Pesannya ke peserta sederhana, "Kita bisa pulang dengan selamat."</p>
-        <p data-en>Head of the WFA Batch 3 organising team Abdul Qahhar Amal hoped participants would absorb what they learned. The programme mentor, coach Onye, set a further goal: a safer mountaineering world, or zero accidents. "At least no activity should cost a life," he said. His message to participants was simple, "We can all go home safely."</p>
+    <p data-en>Head of the WFA Batch 3 organising team Abdul Qahhar Amal hoped participants would absorb what they learned. The programme mentor, coach Onye, set a further goal: a safer mountaineering world, or zero accidents. "At least no activity should cost a life," he said. His message to participants was simple, "We can all go home safely."</p>
     <p data-id>WFA Batch 3 melanjutkan angkatan sebelumnya. Dokumentasi kegiatan bisa dilihat di Instagram @fmi.dkijakarta.official.</p>
-        <p data-en>WFA Batch 3 continues the series from earlier batches. Documentation from the event is available on Instagram @fmi.dkijakarta.official.</p>
+    <p data-en>WFA Batch 3 continues the series from earlier batches. Documentation from the event is available on Instagram @fmi.dkijakarta.official.</p>
   </div>
 </div>
 <footer>
@@ -169,6 +196,30 @@ function setLang(lang) {
   document.getElementById('btn-id').className = lang === 'id' ? 'active' : '';
   document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
 }
+
+document.querySelectorAll('[data-gallery]').forEach(g => {
+  const main = g.querySelector('.gallery-main');
+  const thumbs = [...g.querySelectorAll('.gallery-thumbs button')];
+  const count = g.querySelector('.gallery-count');
+  const prev = g.querySelector('.gallery-nav--prev');
+  const next = g.querySelector('.gallery-nav--next');
+  if (!main) return;
+  const go = i => {
+    const n = Math.max(0, Math.min(i, (thumbs.length || 1) - 1));
+    main.scrollTo({ left: n * main.clientWidth, behavior: 'smooth' });
+  };
+  thumbs.forEach((b, i) => b.addEventListener('click', () => go(i)));
+  if (prev) prev.addEventListener('click', () => go(Math.round(main.scrollLeft / main.clientWidth) - 1));
+  if (next) next.addEventListener('click', () => go(Math.round(main.scrollLeft / main.clientWidth) + 1));
+  main.addEventListener('scroll', () => {
+    const i = Math.round(main.scrollLeft / main.clientWidth);
+    thumbs.forEach((b, k) => b.classList.toggle('is-active', k === i));
+    if (count) count.textContent = (i + 1) + ' / ' + thumbs.length;
+    if (prev) prev.disabled = i === 0;
+    if (next) next.disabled = i === thumbs.length - 1;
+  }, { passive: true });
+  if (prev) prev.disabled = true;
+});
 </script>
 </body>
 </html>
