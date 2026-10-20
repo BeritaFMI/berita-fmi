@@ -130,6 +130,46 @@ footer a:hover { color: var(--red); }
   .filter-bar { padding: 1.25rem 1rem 0; gap: 0.4rem; }
   .filter-btn { font-size: 0.65rem; padding: 0.3rem 0.65rem; }
 }
+
+/* ── Pagination ── */
+.pagination-bar { max-width: 960px; margin: 0 auto; padding: 0 2.5rem 3rem; }
+.pagination { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+.pagination button {
+  min-width: 38px; height: 38px; padding: 0 0.7rem;
+  background: var(--white); border: 1px solid var(--gray-light);
+  color: var(--text-sub); font-family: var(--font-body); font-size: 0.82rem;
+  font-weight: 500; cursor: pointer; transition: background 0.18s, color 0.18s, border-color 0.18s;
+}
+.pagination button:hover:not(:disabled) { border-color: var(--red); color: var(--red); }
+.pagination button.pg-active { background: var(--red); border-color: var(--red); color: var(--white); }
+.pagination button:disabled { opacity: 0.35; cursor: default; }
+.pagination .pg-ellipsis { border: none; background: none; color: var(--gray-mid); cursor: default; min-width: 24px; }
+.pagination-info { margin-top: 0.9rem; font-size: 0.75rem; letter-spacing: 0.04em; color: var(--gray-mid); }
+
+/* ── Redaksi (strip semi transparan sebelum footer) ── */
+.redaksi {
+  background: rgba(17, 17, 17, 0.74);
+  border-top: 2px solid var(--red);
+  padding: 2rem 2.5rem 2.1rem;
+}
+.redaksi-inner { max-width: 960px; margin: 0 auto; }
+.redaksi h2 {
+  font-family: var(--font-display); font-size: 0.95rem; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--white); margin-bottom: 1rem;
+}
+.redaksi dl { display: grid; grid-template-columns: 150px 1fr; gap: 0.35rem 1rem; margin: 0; }
+.redaksi dt { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); padding-top: 0.12rem; }
+.redaksi dd { margin: 0; font-size: 0.82rem; line-height: 1.6; color: rgba(255,255,255,0.86); }
+.redaksi dd a { color: rgba(255,255,255,0.86); text-decoration: underline; }
+.redaksi dd a:hover { color: var(--red); }
+@media (max-width: 700px) {
+  .pagination-bar { padding: 0 1.25rem 2.5rem; }
+  .pagination { gap: 0.28rem; }
+  .pagination button { min-width: 30px; height: 34px; padding: 0 0.4rem; font-size: 0.76rem; }
+  .redaksi { padding: 1.6rem 1.25rem; }
+  .redaksi dl { grid-template-columns: 1fr; gap: 0.15rem; }
+  .redaksi dt { margin-top: 0.7rem; }
+}
 </style>
 </head>
 <body class="lang-id">
@@ -2048,22 +2088,95 @@ footer a:hover { color: var(--red); }
       </div></article>
 
 </main>
+<div class="pagination-bar">
+  <div class="pagination" id="pagination" role="navigation" aria-label="Navigasi halaman"></div>
+  <p class="pagination-info" id="paginationInfo"></p>
+</div>
+<section class="redaksi">
+  <div class="redaksi-inner">
+    <h2><span data-id>Redaksi Berita FMI</span><span data-en>FMI News Editorial</span></h2>
+    <dl>
+      <dt><span data-id>Pembina</span><span data-en>Trustee</span></dt>
+      <dd>dr. Muhammad Iqbal El Mubarak, Sp.B <span data-id>(Sekretaris Jenderal PB FMI)</span><span data-en>(Secretary General of PB FMI)</span></dd>
+
+      <dt><span data-id>Pengarah</span><span data-en>Director</span></dt>
+      <dd>dr. Putro Setyobudyo Muhammad, MBL, CIHL</dd>
+
+      <dt><span data-id>Pengurus Harian</span><span data-en>Managing Editors</span></dt>
+      <dd><span data-id>Biro Media dan Dokumentasi PB FMI: </span><span data-en>PB FMI Media and Documentation Bureau: </span>Iqbal Ibnu, Ressy Elang Andrian, Ariestya Yustana, Muhammad Zen</dd>
+
+      <dt><span data-id>Koreksi &amp; klarifikasi</span><span data-en>Corrections &amp; clarifications</span></dt>
+      <dd><a href="mailto:sekretariatanfmi@gmail.com">sekretariatanfmi@gmail.com</a></dd>
+    </dl>
+  </div>
+</section>
 <footer>
   <span>© 2026 Federasi Mountaineering Indonesia</span>
   <a href="https://mountaineering-indonesia.org">mountaineering-indonesia.org</a>
 </footer>
 <script>
-function filterNews(btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  var cat = btn.getAttribute('data-filter');
-  document.querySelectorAll('.news-grid article').forEach(function(a) {
-    if (cat === 'SEMUA' || a.getAttribute('data-category') === cat) {
-      a.style.display = '';
-    } else {
-      a.style.display = 'none';
+var PER_PAGE = 6;
+var currentPage = 1;
+var activeCat = 'SEMUA';
+var gridEl = document.querySelector('.news-grid');
+var cards = Array.prototype.slice.call(gridEl.querySelectorAll('article'));
+var pagerEl = document.getElementById('pagination');
+var infoEl = document.getElementById('paginationInfo');
+
+function visibleCards() {
+  return cards.filter(function (c) { return activeCat === 'SEMUA' || c.getAttribute('data-category') === activeCat; });
+}
+
+function renderPagination() {
+  var list = visibleCards();
+  var total = Math.max(1, Math.ceil(list.length / PER_PAGE));
+  if (currentPage > total) currentPage = total;
+  if (currentPage < 1) currentPage = 1;
+
+  cards.forEach(function (c) { c.style.display = 'none'; });
+  list.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE).forEach(function (c) { c.style.display = ''; });
+
+  infoEl.innerHTML = '<span data-id>Halaman ' + currentPage + ' dari ' + total + ' \u00b7 ' + list.length + ' artikel</span>'
+    + '<span data-en>Page ' + currentPage + ' of ' + total + ' \u00b7 ' + list.length + ' articles</span>';
+
+  if (total <= 1) { pagerEl.innerHTML = ''; updateUrl(); return; }
+
+  var html = '<button type="button" onclick="goToPage(' + (currentPage - 1) + ')" aria-label="Halaman sebelumnya / Previous page"' + (currentPage === 1 ? ' disabled' : '') + '>&laquo;</button>';
+  for (var p = 1; p <= total; p++) {
+    if (total > 9 && p > 2 && p < currentPage - 1) {
+      if (p === 3) html += '<button type="button" class="pg-ellipsis" disabled>&hellip;</button>';
+      continue;
     }
-  });
+    if (total > 9 && p > currentPage + 1 && p < total - 1) {
+      if (p === total - 2) html += '<button type="button" class="pg-ellipsis" disabled>&hellip;</button>';
+      continue;
+    }
+    html += '<button type="button" class="' + (p === currentPage ? 'pg-active' : '') + '" onclick="goToPage(' + p + ')">' + p + '</button>';
+  }
+  html += '<button type="button" onclick="goToPage(' + (currentPage + 1) + ')" aria-label="Halaman berikutnya / Next page"' + (currentPage === total ? ' disabled' : '') + '>&raquo;</button>';
+  pagerEl.innerHTML = html;
+  updateUrl();
+}
+
+function updateUrl() {
+  if (!window.history || !window.history.replaceState) return;
+  var q = '?page=' + currentPage + (activeCat !== 'SEMUA' ? '&kategori=' + activeCat : '');
+  try { history.replaceState(null, '', q); } catch (e) {}
+}
+
+function goToPage(p) {
+  currentPage = p;
+  renderPagination();
+  var top = document.querySelector('.filter-bar');
+  if (top) top.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function filterNews(btn) {
+  document.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  activeCat = btn.getAttribute('data-filter');
+  currentPage = 1;
+  renderPagination();
 }
 
 function setLang(lang) {
@@ -2071,6 +2184,17 @@ function setLang(lang) {
   document.getElementById('btn-id').className = lang === 'id' ? 'active' : '';
   document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
 }
+(function initFromUrl() {
+  var q = new URLSearchParams(window.location.search);
+  var pg = parseInt(q.get('page'), 10);
+  if (pg > 0) currentPage = pg;
+  var kat = q.get('kategori');
+  if (kat) {
+    var btn = document.querySelector('.filter-btn[data-filter="' + kat + '"]');
+    if (btn) { document.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); }); btn.classList.add('active'); activeCat = kat; }
+  }
+})();
+renderPagination();
 document.querySelectorAll('.reveal').forEach((el, i) => {
   el.style.animationDelay = (i * 0.04) + 's';
 });
