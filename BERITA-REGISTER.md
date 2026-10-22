@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **082**
+## ⚡ Next Available Number: **083**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 082 | `082-evakuasi-udara-pendaki-belanda-rinjani-keselamatan.html` | Evakuasi Helikopter Pendaki Belanda di Rinjani Lancar, FMI Ingatkan Keselamatan Dimulai Sebelum Mendaki | 22 Okt 2026 | KESELAMATAN | Manual (siaran pers PB FMI + verifikasi pemberitaan) | Lokal |
 | 081 | `081-sispala-jakarta-stigma-pembinaan-fasta-rescue.html` | Setelah Stigma Kekerasan, Sispala Jakarta Bangkit Lewat Pembinaan dan Fasta Rescue | 20 Okt 2026 | ORGANISASI | Manual (riset pemberitaan & FMI Podcast) | Lokal |
 | 080 | `080-fmi-dki-jakarta-wfa-batch-3-universitas-trilogi.html` | WFA Batch 3 di Universitas Trilogi Usai, Mentor Berpesan: Yang Penting Kita Bisa Pulang dengan Selamat | 19 Okt 2026 | PELATIHAN | Manual (rilis FMI DKI Jakarta + foto kegiatan) | Lokal |
 | 079 | `079-fmi-jatim-prc-diklat-vertical-rescue-sidoarjo.html` | FMI Jatim dan PRC Latih 100 Penyelamat Lewat Diklat Vertical Rescue di Sidoarjo | 18 Okt 2026 | PELATIHAN | Manual (sumber liputan tribrata.tv & rakyatjelata.com) | Lokal |
