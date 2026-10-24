@@ -106,6 +106,15 @@ footer { background: var(--black); padding: 2rem 2.5rem; display: flex; justify-
 footer span, footer a { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-decoration: none; }
 footer a:hover { color: var(--red); }
 @media (max-width: 700px) { .nav-links { display: none; } }
+
+.gallery--ig { max-width: 640px; margin: 0 auto; }
+.gallery--ig .gallery-slide img { aspect-ratio: 4 / 5; object-fit: cover; }
+.gallery--ig .gallery-thumbs { justify-content: center; }
+.gallery--ig .gallery-thumbs button img { aspect-ratio: 4 / 5; }
+.ig-carousel-head { max-width: 640px; margin: 2.8rem auto 0.4rem; }
+.ig-carousel-head .k { font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; color: #C8102E; font-weight: 600; }
+.ig-carousel-head h2 { font-size: 1.35rem; line-height: 1.25; margin: .55rem 0 .35rem; }
+.ig-carousel-head p { font-size: .9rem; color: #6b6b6b; margin: 0 0 1.1rem; }
 </style>
 </head>
 <body class="lang-id">
@@ -184,6 +193,53 @@ footer a:hover { color: var(--red); }
     <p data-en>The six names in Bromo are not the only ones. Through 2026, reports also recorded Akhmad Rizani (54), head of the TSAK Jekan Raya in Palangka Raya; Ahmadin, known as Itam Madin (56), a volunteer with the Huma Singgah Itah fire service in Central Kalimantan; Aries Sutio Luthfil Hadi (30), a volunteer with the Kotawaringin Barat community fire care group who died on September 10, 2026; and Nurdin, known as Amang Udin, from Basirih Hilir village in Kotawaringin Timur. With the six from Bromo, the list of firefighters and volunteers lost this year reaches ten.</p>
     <p data-id>Yang perlu diingat, api di kawasan gunung jarang dimulai dari hutan. Ia biasanya datang dari kebiasaan kecil di tepi kawasan, lalu bertemu savana kering dan angin. Karena itu, di jalur mana pun, tiga hal sederhana tetap berlaku: tidak menyalakan api, tidak membuang puntung, dan mematuhi penutupan jalur. Keselamatan bukan soal sampai ke puncak, tetapi soal bisa kembali. Di lereng Bromo, mereka yang menjaga kawasan justru tidak kembali.</p>
     <p data-en>One thing is worth remembering: fires in mountain areas rarely start inside the forest. They start with small habits at the edge of the area, then meet dry savanna and wind. So on any trail, three simple rules still apply: no campfires, no cigarette butts, and respect every closure. Safety is not about reaching the summit, but about coming back. On the slopes of Bromo, those who were protecting the area did not come back.</p>
+
+<div class="ig-carousel-head">
+  <div class="k">Carousel Instagram</div>
+  <h2 data-id>Enam Nyawa di Lereng Bromo</h2>
+  <h2 data-en>Six Lives on the Slopes of Bromo</h2>
+  <p data-id>Versi ringkas tujuh slide untuk dibagikan. Geser untuk membaca.</p>
+  <p data-en>A seven slide summary made for sharing. Swipe to read.</p>
+</div>
+<figure class="gallery gallery--ig" data-gallery>
+  <div class="gallery-stage">
+    <div class="gallery-main">
+      <div class="gallery-slide">
+        <img src="img/083-ig-1.jpg" alt="Sampul carousel: judul Enam Nyawa di Lereng Bromo dengan foto savana Bromo." loading="lazy">
+      </div>
+      <div class="gallery-slide">
+        <img src="img/083-ig-2.jpg" alt="Slide kronologi: api dari ladang 13 Oktober, padam 14 Oktober, angin berbalik 15 Oktober." loading="lazy">
+      </div>
+      <div class="gallery-slide">
+        <img src="img/083-ig-3.jpg" alt="Slide enam nama korban beserta peran masing-masing." loading="lazy">
+      </div>
+      <div class="gallery-slide">
+        <img src="img/083-ig-4.jpg" alt="Slide dampak ke pendakian: Penanjakan dibuka 23 Oktober, jalur Semeru ditutup, 170 pendaki tertahan." loading="lazy">
+      </div>
+      <div class="gallery-slide">
+        <img src="img/083-ig-5.jpg" alt="Slide empat nama korban karhutla lain sepanjang 2026." loading="lazy">
+      </div>
+      <div class="gallery-slide">
+        <img src="img/083-ig-6.jpg" alt="Slide tiga aturan: tanpa api unggun, tanpa puntung rokok, patuhi penutupan jalur." loading="lazy">
+      </div>
+      <div class="gallery-slide">
+        <img src="img/083-ig-7.jpg" alt="Slide penutup: keselamatan bukan soal sampai ke puncak, tetapi soal bisa kembali." loading="lazy">
+      </div>
+    </div>
+    <button type="button" class="gallery-nav gallery-nav--prev" aria-label="Slide sebelumnya / Previous slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 4.6 8 12l7.4 7.4 1.6-1.6L11.2 12l5.8-5.8z"/></svg></button>
+    <button type="button" class="gallery-nav gallery-nav--next" aria-label="Slide berikutnya / Next slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 4.6 16 12l-7.4 7.4L7 17.8 12.8 12 7 6.2z"/></svg></button>
+    <span class="gallery-count">1 / 7</span>
+  </div>
+  <div class="gallery-thumbs" role="group" aria-label="Pilih slide / Choose slide">
+    <button type="button" class="is-active" aria-label="Slide 1"><img src="img/083-ig-1.jpg" alt=""></button>
+    <button type="button" class="" aria-label="Slide 2"><img src="img/083-ig-2.jpg" alt=""></button>
+    <button type="button" class="" aria-label="Slide 3"><img src="img/083-ig-3.jpg" alt=""></button>
+    <button type="button" class="" aria-label="Slide 4"><img src="img/083-ig-4.jpg" alt=""></button>
+    <button type="button" class="" aria-label="Slide 5"><img src="img/083-ig-5.jpg" alt=""></button>
+    <button type="button" class="" aria-label="Slide 6"><img src="img/083-ig-6.jpg" alt=""></button>
+    <button type="button" class="" aria-label="Slide 7"><img src="img/083-ig-7.jpg" alt=""></button>
+  </div>
+</figure>
   </div>
 </div>
 <footer>
