@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **088**
+## ⚡ Next Available Number: **089**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 088 | `088-nepal-setop-pendakian-tinggi-siklon-arnab-longsor-salju.html` | Nepal Setop Pendakian Tinggi 29-31 Oktober, Risiko Longsor Salju Naik | 29 Okt 2026 | KESELAMATAN | Manual (foto warga + peringatan resmi Nepal) | Lokal |
 | 087 | `087-mengenal-uiaa-induk-federasi-pendakian-gunung-dunia.html` | Mengenal UIAA, Induk Federasi Pendakian Gunung Dunia | 29 Okt 2026 | INTERNASIONAL | Manual (artikel penjelas, ilustrasi AI) | Lokal |
 | 086 | `086-delegasi-fmi-tiba-kathmandu-sidang-umum-uiaa.html` | Delegasi FMI Tiba di Kathmandu, Siap Ikut Sidang Umum UIAA | 29 Okt 2026 | INTERNASIONAL | Manual (foto kedatangan Prinsipal + siaran pers PB FMI) | Lokal |
 | 085 | `085-delegasi-fmi-bertolak-kathmandu-sidang-umum-uiaa.html` | Delegasi FMI Bertolak ke Kathmandu untuk Sidang Umum UIAA | 28 Okt 2026 | INTERNASIONAL | Manual (siaran pers PB FMI + foto Prinsipal) | Lokal |
