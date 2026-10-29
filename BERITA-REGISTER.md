@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **086**
+## ⚡ Next Available Number: **087**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 086 | `086-delegasi-fmi-tiba-kathmandu-sidang-umum-uiaa.html` | Delegasi FMI Tiba di Kathmandu, Siap Ikut Sidang Umum UIAA | 29 Okt 2026 | INTERNASIONAL | Manual (foto kedatangan Prinsipal + siaran pers PB FMI) | Lokal |
 | 085 | `085-delegasi-fmi-bertolak-kathmandu-sidang-umum-uiaa.html` | Delegasi FMI Bertolak ke Kathmandu untuk Sidang Umum UIAA | 28 Okt 2026 | INTERNASIONAL | Manual (siaran pers PB FMI + foto Prinsipal) | Lokal |
 | 084 | `084-fmi-jatim-diklat-vertical-rescue-ditutup-diklat-lapangan.html` | Diklat Vertical Rescue FMI Jatim Ditutup, Latihan Berlanjut ke Medan Tebing | 25 Okt 2026 | PELATIHAN | Manual (bahan & foto Prinsipal + liputan tribrata.tv/rakyatjelata.com) | Lokal |
 | 083 | `083-karhutla-bromo-enam-nyawa-dan-jalur-pendakian.html` | Karhutla Bromo, Enam Petugas dan Relawan Gugur, Akses Penanjakan Baru Dibuka | 23 Okt 2026 | KESELAMATAN | Manual (siaran pers Kemenhut + pemberitaan) | Lokal |
