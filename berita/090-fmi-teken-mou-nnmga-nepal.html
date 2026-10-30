@@ -102,6 +102,45 @@ nav { position: sticky; top: 0; z-index: 100; background: var(--black); display:
   .gallery-nav--next { right: 8px; }
   .gallery-thumbs button { flex: 0 0 76px; }
 }
+/* Galeri geser (pola IHSC): scroll-snap + thumbnail + tombol */
+.gallery { margin: 0 0 2.25rem; min-width: 0; }
+.gallery-stage { position: relative; min-width: 0; }
+.gallery-main {
+  position: relative; display: flex; align-items: flex-start;
+  overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none; border-radius: 4px;
+  border: 1px solid var(--gray-light); background: var(--black);
+}
+.gallery-main::-webkit-scrollbar { display: none; }
+.gallery-slide { position: relative; flex: 0 0 100%; scroll-snap-align: start; display: flex; flex-direction: column; }
+.gallery-slide img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.gallery-cap { margin: 0; padding: .6rem .9rem; background: var(--white-off); border-top: 1px solid var(--gray-light);
+  color: var(--gray-mid); font-size: .8rem; font-style: italic; line-height: 1.5; }
+.gallery-count { position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,.6); color: #fff;
+  font-size: .72rem; font-weight: 500; letter-spacing: .06em; padding: .25rem .6rem; border-radius: 99px; }
+.gallery-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px;
+  display: grid; place-items: center; border: none; border-radius: 50%; background: rgba(0,0,0,.58);
+  box-shadow: 0 1px 6px rgba(0,0,0,.35);
+  color: #fff; cursor: pointer; z-index: 3; transition: background .18s, opacity .18s; }
+.gallery-nav svg { width: 20px; height: 20px; fill: currentColor; }
+.gallery-nav:hover { background: var(--red); }
+.gallery-nav:disabled { opacity: .3; cursor: default; }
+.gallery-nav--prev { left: 12px; }
+.gallery-nav--next { right: 12px; }
+.gallery-thumbs { display: flex; gap: 8px; margin-top: 10px; width: 100%; min-width: 0;
+  overflow-x: auto; overflow-y: hidden; padding: 2px 2px 4px; -webkit-overflow-scrolling: touch; }
+.gallery-thumbs button { flex: 0 0 96px; padding: 0; border: 2px solid transparent; border-radius: 3px;
+  background: none; cursor: pointer; overflow: hidden; opacity: .6; transition: opacity .18s, border-color .18s; }
+.gallery-thumbs button img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.gallery-thumbs button:hover { opacity: 1; }
+.gallery-thumbs button.is-active { border-color: var(--red); opacity: 1; }
+@media (max-width: 700px) {
+  .gallery-nav { width: 34px; height: 34px; }
+  .gallery-nav svg { width: 17px; height: 17px; }
+  .gallery-nav--prev { left: 8px; }
+  .gallery-nav--next { right: 8px; }
+  .gallery-thumbs button { flex: 0 0 76px; }
+}
 footer { background: var(--black); padding: 2rem 2.5rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); }
 footer span, footer a { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-decoration: none; }
 footer a:hover { color: var(--red); }
@@ -147,35 +186,44 @@ footer a:hover { color: var(--red); }
   <h1 class="article-title" data-id>FMI Teken MoU dengan NNMGA Nepal</h1>
   <h1 class="article-title" data-en>FMI Signs MoU with Nepal's NNMGA</h1>
 </div>
-<div class="article-photo">
-  <img src="img/090-fmi-teken-mou-nnmga-nepal.jpg" alt="Sekelompok orang berdiri berjajar memegang naskah bertanda tangan di depan latar acara penandatanganan FMI dan NNMGA">
-</div>
-<div class="article-caption">
-  <span data-id>Peserta penandatanganan MoU FMI dan NNMGA di Kathmandu, Nepal, Jumat (30/10/2026), memperlihatkan naskah yang sudah diteken di depan latar acara. (Dokumentasi FMI)</span>
-  <span data-en>Participants at the FMI-NNMGA MoU signing in Kathmandu, Nepal, Friday (30/10/2026), showing the signed document in front of the event backdrop. (FMI documentation)</span>
-</div>
 <div class="article-wrap">
   <div class="article-body">
-        <p data-id>KATHMANDU, NEPAL - Federasi Mountaineering Indonesia (FMI) menandatangani Memorandum of Understanding (MoU) dengan Nepal National Mountain Guide Association (NNMGA) di Kathmandu, Nepal, Jumat (30/10/2026). Penandatanganan berlangsung di sela-sela rangkaian Sidang Umum UIAA 2026 dan disaksikan perwakilan KBRI Dhaka, yang wilayah kerjanya juga mencakup Nepal.</p>
+    <figure class="gallery" data-gallery>
+  <div class="gallery-stage">
+    <div class="gallery-main">
+      <div class="gallery-slide">
+        <img src="img/090-foto-1.jpg" alt="Sekelompok peserta berdiri berjajar memegang naskah bertanda tangan di depan latar acara penandatanganan FMI dan NNMGA" loading="lazy">
+        <figcaption class="gallery-cap"><span data-id>Peserta penandatanganan MoU FMI dan NNMGA di Kathmandu, Nepal, Jumat (30/10/2026), memperlihatkan naskah yang sudah diteken. (Dokumentasi FMI)</span><span data-en>Participants at the FMI-NNMGA MoU signing in Kathmandu, Nepal, Friday (30/10/2026), showing the signed document. (FMI documentation)</span></figcaption>
+      </div>
+      <div class="gallery-slide">
+        <img src="img/090-foto-2.jpg" alt="Dua orang duduk menandatangani naskah di meja, disaksikan beberapa orang berdiri di sekeliling" loading="lazy">
+        <figcaption class="gallery-cap"><span data-id>Penandatanganan naskah MoU FMI dan NNMGA di Kathmandu, Nepal, Jumat (30/10/2026). (Dokumentasi FMI)</span><span data-en>The signing of the FMI-NNMGA MoU in Kathmandu, Nepal, Friday (30/10/2026). (FMI documentation)</span></figcaption>
+      </div>
+      <div class="gallery-slide">
+        <img src="img/090-foto-3.jpg" alt="Latar acara bergambar logo NNMGA dan FMI bertuliskan Memorandum of Understanding Signing Ceremony, 30 Oktober 2026, Kathmandu, Nepal" loading="lazy">
+        <figcaption class="gallery-cap"><span data-id>Latar acara penandatanganan MoU FMI dan NNMGA, Kathmandu, Nepal, 30 Oktober 2026. (Dokumentasi FMI)</span><span data-en>The FMI-NNMGA MoU signing ceremony backdrop, Kathmandu, Nepal, October 30, 2026. (FMI documentation)</span></figcaption>
+      </div>
+    </div>
+    <button type="button" class="gallery-nav gallery-nav--prev" aria-label="Foto sebelumnya / Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 4.6 8 12l7.4 7.4 1.6-1.6L11.2 12l5.8-5.8z"/></svg></button>
+    <button type="button" class="gallery-nav gallery-nav--next" aria-label="Foto berikutnya / Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 4.6 16 12l-7.4 7.4L7 17.8 12.8 12 7 6.2z"/></svg></button>
+    <span class="gallery-count">1 / 3</span>
+  </div>
+  <div class="gallery-thumbs" role="group" aria-label="Pilih foto / Choose photo">
+    <button type="button" class="is-active" aria-label="Foto 1"><img src="img/090-foto-1.jpg" alt=""></button>
+    <button type="button" class="" aria-label="Foto 2"><img src="img/090-foto-2.jpg" alt=""></button>
+    <button type="button" class="" aria-label="Foto 3"><img src="img/090-foto-3.jpg" alt=""></button>
+  </div>
+</figure>
+    <p data-id>KATHMANDU, NEPAL - Federasi Mountaineering Indonesia (FMI) menandatangani Memorandum of Understanding (MoU) dengan Nepal National Mountain Guide Association (NNMGA) di Kathmandu, Nepal, Jumat (30/10/2026). Penandatanganan berlangsung di sela-sela rangkaian Sidang Umum UIAA 2026 dan disaksikan perwakilan KBRI Dhaka, yang wilayah kerjanya juga mencakup Nepal.</p>
     <p data-en>KATHMANDU, NEPAL - The Federasi Mountaineering Indonesia (FMI) signed a Memorandum of Understanding (MoU) with the Nepal National Mountain Guide Association (NNMGA) in Kathmandu, Nepal, on Friday (30/10/2026). The signing took place on the sidelines of the 2026 UIAA General Assembly and was witnessed by representatives of the Indonesian Embassy in Dhaka, whose remit also covers Nepal.</p>
     <p data-id>NNMGA adalah asosiasi pemandu gunung profesional Nepal yang menjaga standar pemanduan di jalur-jalur Himalaya. Isi MoU menyangkut keahlian orang yang bekerja di jalur: pelatihan, sertifikasi, dan pertukaran instruktur. Prioritas awalnya pelatihan High Altitude Mountain Rescue pada 2027-2028.</p>
     <p data-en>The NNMGA is Nepal's professional mountain guide association and the body that keeps guiding standards on Himalayan routes. The MoU concerns the skills of the people who work on those routes: training, certification and instructor exchange. Its first priority is High Altitude Mountain Rescue training in 2027-2028.</p>
-    <figure class="article-figure">
-      <img src="img/090-teken-meja.jpg" alt="Dua orang menandatangani naskah MoU di meja Bundar di depan latar acara, disaksikan beberapa orang berdiri">
-      <figcaption data-id>Penandatanganan naskah MoU FMI dan NNMGA di Kathmandu, Nepal, Jumat (30/10/2026). (Dokumentasi FMI)</figcaption>
-      <figcaption data-en>The signing of the FMI-NNMGA MoU in Kathmandu, Nepal, Friday (30/10/2026). (FMI documentation)</figcaption>
-    </figure>
     <p data-id>Ketua Delegasi FMI Brigjen TNI (Mar) Sandy Muchjidin Latief, S.I.P., M.M. menilai kerja sama ini menyentuh hal yang paling menentukan di lapangan. "Keselamatan pendakian ditentukan oleh orang yang memimpin di jalur dan pengetahuan yang dibawanya. Belajar dari pemandu Himalaya membuat standar kami naik, dan keahlian pendaki Indonesia punya jalan untuk diakui di tingkat dunia," katanya.</p>
     <p data-en>The head of the FMI delegation, Brig. Gen. TNI (Mar) Sandy Muchjidin Latief, S.I.P., M.M., said the cooperation touches the factor that decides most on the ground. "Climbing safety is decided by the person leading on the route and the knowledge they carry. Learning from Himalayan guides raises our standards, and it gives Indonesian climbers' skills a path to international recognition," he said.</p>
     <p data-id>Ketua Umum PB FMI Mayjen TNI (Mar) Purn. Buyung Lalana, S.E. menyebut kerja sama ini sebagai arah jangka panjang. "Kami membangun tata kelola pendakian yang tertib, aman, dan berkelanjutan. Kerja sama dengan NNMGA adalah bagian dari upaya itu, agar pengalaman Indonesia di kawasan Ring of Fire dipertemukan dengan praktik terbaik dunia," ujarnya.</p>
     <p data-en>FMI chairman Maj. Gen. TNI (Mar) Ret. Buyung Lalana, S.E. described the cooperation as a long-term direction. "We are building climbing governance that is orderly, safe and sustainable. Cooperation with the NNMGA is part of that effort, bringing Indonesia's experience in the Ring of Fire together with global best practice," he said.</p>
     <p data-id>Inti kerja sama ini transfer pengetahuan, dan jalannya dua arah. Instruktur NNMGA datang mengajar di Indonesia, sementara cara FMI mengelola jalur di gunung api kawasan Ring of Fire dan hutan tropis menjadi bahan pelajaran bagi mereka. Bukan hanya menerima standar, tapi ikut menyumbang. Medan Indonesia yang tersebar di bentang kepulauan lebih dari 17 ribu pulau memberi persoalan yang jarang ditemui di jalur Himalaya: cuaca yang berubah cepat, kawah aktif, dan akses yang bergantung pada penyeberangan laut.</p>
     <p data-en>The heart of the cooperation is knowledge transfer, and it runs both ways. NNMGA instructors come to teach in Indonesia, while the way FMI manages routes on Ring of Fire volcanoes and in tropical forests becomes study material for them. It is not only about receiving standards, but also about contributing. Indonesia's terrain, spread across an archipelago of more than 17,000 islands, poses problems rarely met on Himalayan routes: fast-changing weather, active craters and access that depends on sea crossings.</p>
-    <figure class="article-figure">
-      <img src="img/090-latar-acara-fmi-nnmga.jpg" alt="Latar acara penandatanganan MoU FMI dan NNMGA bertuliskan Memorandum of Understanding (MoU) Signing Ceremony, 30 Oktober 2026, Kathmandu, Nepal">
-      <figcaption data-id>Latar acara penandatanganan MoU FMI dan NNMGA di Kathmandu, Nepal, 30 Oktober 2026. (Dokumentasi FMI)</figcaption>
-      <figcaption data-en>The FMI and NNMGA MoU signing ceremony backdrop in Kathmandu, Nepal, October 30, 2026. (FMI documentation)</figcaption>
-    </figure>
     <p data-id>Penandatanganan berlangsung di sela-sela rangkaian Sidang Umum UIAA 2026, 30-31 Oktober, yang digelar di Kathmandu dengan Nepal Mountaineering Association sebagai tuan rumah. Yang paling dinanti justru bagian setelah seremoni: jadwal pelatihan bersama dan pertukaran instruktur pada 2027-2028, termasuk siapa yang berangkat lebih dulu dan di jalur mana pelatihan lapangan digelar.</p>
     <p data-en>The signing took place on the sidelines of the 2026 UIAA General Assembly, held in Kathmandu on 30-31 October with the Nepal Mountaineering Association as host. What matters most comes after the ceremony: the joint training schedule and instructor exchange in 2027-2028, including who travels first and where the field training is held.</p>
 
@@ -237,6 +285,30 @@ function setLang(lang) {
   document.getElementById('btn-id').className = lang === 'id' ? 'active' : '';
   document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
 }
+
+document.querySelectorAll('[data-gallery]').forEach(g => {
+  const main = g.querySelector('.gallery-main');
+  const thumbs = [...g.querySelectorAll('.gallery-thumbs button')];
+  const count = g.querySelector('.gallery-count');
+  const prev = g.querySelector('.gallery-nav--prev');
+  const next = g.querySelector('.gallery-nav--next');
+  if (!main) return;
+  const go = i => {
+    const n = Math.max(0, Math.min(i, (thumbs.length || 1) - 1));
+    main.scrollTo({ left: n * main.clientWidth, behavior: 'smooth' });
+  };
+  thumbs.forEach((b, i) => b.addEventListener('click', () => go(i)));
+  if (prev) prev.addEventListener('click', () => go(Math.round(main.scrollLeft / main.clientWidth) - 1));
+  if (next) next.addEventListener('click', () => go(Math.round(main.scrollLeft / main.clientWidth) + 1));
+  main.addEventListener('scroll', () => {
+    const i = Math.round(main.scrollLeft / main.clientWidth);
+    thumbs.forEach((b, k) => b.classList.toggle('is-active', k === i));
+    if (count) count.textContent = (i + 1) + ' / ' + thumbs.length;
+    if (prev) prev.disabled = i === 0;
+    if (next) next.disabled = i === thumbs.length - 1;
+  }, { passive: true });
+  if (prev) prev.disabled = true;
+});
 
 document.querySelectorAll('[data-gallery]').forEach(g => {
   const main = g.querySelector('.gallery-main');
