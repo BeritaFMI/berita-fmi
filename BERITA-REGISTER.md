@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **092**
+## ⚡ Next Available Number: **093**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 092 | `092-fmi-teken-mou-taan-nepal.html` | FMI Teken MoU dengan TAAN Nepal | 31 Okt 2026 | INTERNASIONAL | Manual (enam foto Prinsipal: rombongan, penandatanganan, sambutan, buku panduan, syal, kaos GA) | Lokal |
 | 091 | `091-fmi-teken-mou-nma-nepal.html` | FMI Teken MoU dengan NMA Nepal | 31 Okt 2026 | INTERNASIONAL | Manual (tiga foto Prinsipal: meja teken, layar acara, rombongan UIAA GA 2026) | Lokal |
 | 090 | `090-fmi-teken-mou-nnmga-nepal.html` | FMI Teken MoU dengan NNMGA Nepal | 30 Okt 2026 | INTERNASIONAL | Manual (foto Prinsipal penandatanganan MoU FMI-NNMGA + naskah rilis PB FMI) | Lokal |
 | 089 | `089-fmi-hadiri-pembukaan-sidang-umum-uiaa-kathmandu.html` | Sidang Umum UIAA 2026 Dibuka di Kathmandu, Delegasi FMI Ikut Hadir | 29 Okt 2026 | INTERNASIONAL | Manual (foto Prinsipal + susunan acara resmi pembukaan GA UIAA 2026) | Lokal |
