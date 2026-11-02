@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **093**
+## ⚡ Next Available Number: **094**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 093 | `093-pendaki-senior-panduan-kesehatan-uiaa.html` | Catatan Kesehatan dari GA UIAA 2026 | 2 Nov 2026 | KESELAMATAN | Manual (lima foto Prinsipal: peserta di Kathmandu, delegasi GA, tiga sesi lapangan simposium; carousel IG 7 slide) | Lokal |
 | 092 | `092-fmi-teken-mou-taan-nepal.html` | FMI Teken MoU dengan TAAN Nepal | 31 Okt 2026 | INTERNASIONAL | Manual (enam foto Prinsipal: rombongan, penandatanganan, sambutan, buku panduan, syal, kaos GA) | Lokal |
 | 091 | `091-fmi-teken-mou-nma-nepal.html` | FMI Teken MoU dengan NMA Nepal | 31 Okt 2026 | INTERNASIONAL | Manual (tiga foto Prinsipal: meja teken, layar acara, rombongan UIAA GA 2026) | Lokal |
 | 090 | `090-fmi-teken-mou-nnmga-nepal.html` | FMI Teken MoU dengan NNMGA Nepal | 30 Okt 2026 | INTERNASIONAL | Manual (foto Prinsipal penandatanganan MoU FMI-NNMGA + naskah rilis PB FMI) | Lokal |
