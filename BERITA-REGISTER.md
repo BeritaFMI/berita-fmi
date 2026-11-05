@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **096**
+## ⚡ Next Available Number: **097**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 096 | `096-fmi-teken-mou-alpine-club-pakistan.html` | FMI Teken MoU dengan Alpine Club of Pakistan | 31 Okt 2026 | INTERNASIONAL | Manual (foto poster penandatanganan MoU FMI-ACP + naskah MoU FMI-ACP) | Lokal |
 | 095 | `095-sidang-umum-uiaa-2026-kathmandu-keputusan.html` | Sidang Umum UIAA 2026 Ditutup di Kathmandu | 4 Nov 2026 | INTERNASIONAL | Manual (delapan foto UIAA GA 2026 termasuk dua foto delegasi FMI, kredit UIAA serta Abiral Mudbhari dan Peter Bourne; carousel IG 7 slide) | Lokal |
 | 094 | `094-tenzing-film-chomolungma.html` | Film Tenzing Membalik Urutan Penyebutan di Puncak Everest | 4 Nov 2026 | INTERNASIONAL | Manual (tiga foto Wikimedia Commons berlisensi CC: Hillary-Tenzing 1953, Nuptse-Khumbu, Everest dari Kala Patthar; carousel IG 7 slide) | Lokal |
 | 093 | `093-pendaki-senior-panduan-kesehatan-uiaa.html` | Catatan Kesehatan dari GA UIAA 2026 | 2 Nov 2026 | KESELAMATAN | Manual (lima foto Prinsipal: peserta di Kathmandu, delegasi GA, tiga sesi lapangan simposium; carousel IG 7 slide) | Lokal |
