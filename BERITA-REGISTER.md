@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **098**
+## ⚡ Next Available Number: **099**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 098 | `098-uang-everest-tidak-tinggal-di-everest.html` | Uang Everest tidak tinggal di Everest | 10 Nov 2026 | INTERNASIONAL | Manual (lima foto Wikimedia Commons CC BY 4.0 dan CC BY-SA 3.0: Vyacheslav Argenberg, Alpalfour; carousel IG 7 slide; data BBC, Kathmandu Post, Balai TNGR) | Lokal |
 | 097 | `097-kamikochi-gunung-butuh-kultur-manusia-butuh-diatur.html` | Gunung butuh kultur, manusia butuh diatur | 10 Nov 2026 | KESELAMATAN | Manual (lima foto Wikimedia Commons CC: 663highland CC BY 2.5, Alpsdake domain publik; carousel IG 7 slide; penulis dr. Putro Setyobudyo Muhammad, Ketua Bidang Litbangnov PB FMI) | Lokal |
 | 096 | `096-fmi-teken-mou-alpine-club-pakistan.html` | FMI Teken MoU dengan Alpine Club of Pakistan | 31 Okt 2026 | INTERNASIONAL | Manual (foto poster penandatanganan MoU FMI-ACP + naskah MoU FMI-ACP) | Lokal |
 | 095 | `095-sidang-umum-uiaa-2026-kathmandu-keputusan.html` | Sidang Umum UIAA 2026 Ditutup di Kathmandu | 4 Nov 2026 | INTERNASIONAL | Manual (delapan foto UIAA GA 2026 termasuk dua foto delegasi FMI, kredit UIAA serta Abiral Mudbhari dan Peter Bourne; carousel IG 7 slide) | Lokal |
