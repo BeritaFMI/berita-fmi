@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **099**
+## ⚡ Next Available Number: **100**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 099 | `099-fmi-sumsel-sriwijaya-mountaineering-course-batch-1.html` | FMI Sumsel Buka Sriwijaya Mountaineering Course Batch 1 | 11 Nov 2026 | PELATIHAN | Manual (banner desain Berita FMI + logo SMC dari laman resmi FMI Sumsel; carousel IG 7 slide; bahan pengumuman FMI Pengprov Sumatera Selatan 10 Nov 2026) | Lokal |
 | 098 | `098-uang-everest-tidak-tinggal-di-everest.html` | Uang Everest tidak tinggal di Everest | 10 Nov 2026 | INTERNASIONAL | Manual (lima foto Wikimedia Commons CC BY 4.0 dan CC BY-SA 3.0: Vyacheslav Argenberg, Alpalfour; carousel IG 7 slide; data BBC, Kathmandu Post, Balai TNGR) | Lokal |
 | 097 | `097-kamikochi-gunung-butuh-kultur-manusia-butuh-diatur.html` | Gunung butuh kultur, manusia butuh diatur | 10 Nov 2026 | KESELAMATAN | Manual (lima foto Wikimedia Commons CC: 663highland CC BY 2.5, Alpsdake domain publik; carousel IG 7 slide; penulis dr. Putro Setyobudyo Muhammad, Ketua Bidang Litbangnov PB FMI) | Lokal |
 | 096 | `096-fmi-teken-mou-alpine-club-pakistan.html` | FMI Teken MoU dengan Alpine Club of Pakistan | 31 Okt 2026 | INTERNASIONAL | Manual (foto poster penandatanganan MoU FMI-ACP + naskah MoU FMI-ACP) | Lokal |
