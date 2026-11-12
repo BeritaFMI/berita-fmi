@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **100**
+## ⚡ Next Available Number: **101**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 100 | `100-k2-asal-nama-dan-pendakian-pertama.html` | Kalau K1 Bernama Masherbrum, Kenapa K2 Tidak Punya Nama? | 12 Nov 2026 | INTERNASIONAL | Manual (enam gambar: Wikimedia Commons CC BY 3.0/CC BY 4.0/CC BY-SA 3.0 + domain publik + Dokumentasi FMI; status ACP diverifikasi ke UIAA, PSB, IFSC, UAAA) | Lokal |
 | 099 | `099-fmi-sumsel-sriwijaya-mountaineering-course-batch-1.html` | FMI Sumsel Buka Sriwijaya Mountaineering Course Batch 1 | 11 Nov 2026 | PELATIHAN | Manual (banner desain Berita FMI + logo SMC dari laman resmi FMI Sumsel; carousel IG 7 slide; bahan pengumuman FMI Pengprov Sumatera Selatan 10 Nov 2026) | Lokal |
 | 098 | `098-uang-everest-tidak-tinggal-di-everest.html` | Uang Everest tidak tinggal di Everest | 10 Nov 2026 | INTERNASIONAL | Manual (lima foto Wikimedia Commons CC BY 4.0 dan CC BY-SA 3.0: Vyacheslav Argenberg, Alpalfour; carousel IG 7 slide; data BBC, Kathmandu Post, Balai TNGR) | Lokal |
 | 097 | `097-kamikochi-gunung-butuh-kultur-manusia-butuh-diatur.html` | Gunung butuh kultur, manusia butuh diatur | 10 Nov 2026 | KESELAMATAN | Manual (lima foto Wikimedia Commons CC: 663highland CC BY 2.5, Alpsdake domain publik; carousel IG 7 slide; penulis dr. Putro Setyobudyo Muhammad, Ketua Bidang Litbangnov PB FMI) | Lokal |
