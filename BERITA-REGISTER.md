@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **102**
+## ⚡ Next Available Number: **103**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 102 | `102-fmi-dki-jakarta-youth-educamp-pemuda-depok.html` | FMI DKI Jakarta Bawa Keterampilan Jalur Gunung ke Kampung, 40 Pemuda Depok Dilatih | 17 Nov 2026 | PELATIHAN | Manual (keterangan tertulis FMI DKI Jakarta via Kedai Pena 13 dan 17 Nov 2026 serta Kabarindo; foto Dok. FMI DKI Jakarta; galeri geser 3 foto + carousel IG 7 slide) | Lokal |
 | 101 | `101-dua-ekspedisi-marinir-carstensz-aconcagua.html` | Dua Ekspedisi Marinir ke Carstensz dan Aconcagua, di Masa Komando Buyung Lalana | 15 Nov 2026 | EKSPEDISI | Manual (reproduksi berita Askara.co karya Dar Edi Yoga 15 Nov 2026, sumber dan tautan dicantumkan di badan artikel; foto Dok. Agoy/Askara.co; carousel IG 7 slide + 1 lembar story) | Lokal |
 | 100 | `100-k2-asal-nama-dan-pendakian-pertama.html` | Kalau K1 Bernama Masherbrum, Kenapa K2 Tidak Punya Nama? | 12 Nov 2026 | INTERNASIONAL | Manual (enam gambar: Wikimedia Commons CC BY 3.0/CC BY 4.0/CC BY-SA 3.0 + domain publik + Dokumentasi FMI; status ACP diverifikasi ke UIAA, PSB, IFSC, UAAA) | Lokal |
 | 099 | `099-fmi-sumsel-sriwijaya-mountaineering-course-batch-1.html` | FMI Sumsel Buka Sriwijaya Mountaineering Course Batch 1 | 11 Nov 2026 | PELATIHAN | Manual (banner desain Berita FMI + logo SMC dari laman resmi FMI Sumsel; carousel IG 7 slide; bahan pengumuman FMI Pengprov Sumatera Selatan 10 Nov 2026) | Lokal |
