@@ -112,6 +112,33 @@ nav { position: sticky; top: 0; z-index: 100; background: var(--black); display:
 .ig-carousel-head .k { font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; color: #C8102E; font-weight: 600; }
 .ig-carousel-head h2 { font-size: 1.35rem; line-height: 1.25; margin: .55rem 0 .35rem; }
 .ig-carousel-head p { font-size: .9rem; color: #6b6b6b; margin: 0 0 1.1rem; }
+
+/* Lightbox: klik foto untuk ukuran penuh */
+.gallery-slide img { cursor: zoom-in; }
+.gallery-hint { font-size: .78rem; color: var(--gray-mid); margin: -.15rem 0 1.4rem; letter-spacing: .02em; }
+.lightbox { position: fixed; inset: 0; z-index: 500; display: none; background: rgba(8,8,8,.985);
+  align-items: center; justify-content: center; padding: 3.5rem 1rem 4.5rem; }
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; border: 1px solid rgba(255,255,255,.15); }
+.lb-close { position: absolute; top: 14px; right: 18px; width: 44px; height: 44px; border: none; border-radius: 50%;
+  background: rgba(255,255,255,.12); color: #fff; font-size: 1.7rem; line-height: 1; cursor: pointer; }
+.lb-close:hover { background: var(--red); }
+.lb-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 50px; height: 50px; border: none;
+  border-radius: 50%; background: rgba(255,255,255,.12); color: #fff; font-size: 1.9rem; line-height: 1; cursor: pointer; }
+.lb-nav:hover { background: var(--red); }
+.lb-prev { left: 16px; }
+.lb-next { right: 16px; }
+.lb-bar { position: absolute; bottom: 16px; left: 0; right: 0; padding: 0 4.5rem; display: flex; gap: 1rem;
+  align-items: flex-start; justify-content: space-between; color: rgba(255,255,255,.75); font-size: .82rem; line-height: 1.5; }
+.lb-cap { max-width: 70ch; font-style: italic; }
+.lb-count { white-space: nowrap; letter-spacing: .08em; color: rgba(255,255,255,.55); }
+@media (max-width: 700px) {
+  .lightbox { padding: 3rem .5rem 5rem; }
+  .lb-nav { width: 38px; height: 38px; font-size: 1.4rem; }
+  .lb-prev { left: 6px; } .lb-next { right: 6px; }
+  .lb-bar { padding: 0 .9rem; font-size: .75rem; }
+}
+
 footer { background: var(--black); padding: 2rem 2.5rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); }
 footer span, footer a { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-decoration: none; }
 footer a:hover { color: var(--red); }
@@ -217,6 +244,8 @@ footer a:hover { color: var(--red); }
         <button type="button" aria-label="Slide 3"><img src="img/102-fmi-dki-jakarta-youth-educamp-pemuda-depok-galeri-3.jpg" alt=""></button>
       </div>
     </figure>
+<p class="gallery-hint" data-id>Klik foto untuk melihat ukuran penuh.</p>
+<p class="gallery-hint" data-en>Click a photo to view it full size.</p>
 
     <div class="ig-carousel-head">
       <div class="k">Carousel Instagram</div>
@@ -250,7 +279,16 @@ footer a:hover { color: var(--red); }
         <button type="button" aria-label="Slide 7"><img src="img/102-fmi-dki-jakarta-youth-educamp-pemuda-depok-ig-7.jpg" alt=""></button>
       </div>
     </figure>
+<p class="gallery-hint" data-id>Klik foto untuk melihat ukuran penuh.</p>
+<p class="gallery-hint" data-en>Click a photo to view it full size.</p>
   </div>
+</div>
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Foto ukuran penuh">
+  <button class="lb-close" type="button" aria-label="Tutup / Close">&times;</button>
+  <button class="lb-nav lb-prev" type="button" aria-label="Foto sebelumnya / Previous photo">&#8249;</button>
+  <img class="lb-img" src="" alt="">
+  <button class="lb-nav lb-next" type="button" aria-label="Foto berikutnya / Next photo">&#8250;</button>
+  <div class="lb-bar"><span class="lb-cap"></span><span class="lb-count"></span></div>
 </div>
 <footer>
   <span>© 2026 Federasi Mountaineering Indonesia</span>
@@ -286,6 +324,68 @@ document.querySelectorAll('[data-gallery]').forEach(g => {
   }, { passive: true });
   if (prev) prev.disabled = true;
 });
+
+/* Lightbox galeri */
+(() => {
+  const lb = document.getElementById('lightbox');
+  if (!lb) return;
+  const imgEl = lb.querySelector('.lb-img');
+  const capEl = lb.querySelector('.lb-cap');
+  const countEl = lb.querySelector('.lb-count');
+  let group = [], idx = 0;
+
+  const render = () => {
+    const slide = group[idx];
+    const img = slide.querySelector('img');
+    imgEl.src = img.getAttribute('src');
+    imgEl.alt = img.getAttribute('alt') || '';
+    const cap = slide.querySelector('.gallery-cap');
+    capEl.innerHTML = cap ? cap.innerHTML : '';
+    countEl.textContent = (idx + 1) + ' / ' + group.length;
+  };
+  const open = (slides, i) => {
+    group = slides; idx = i;
+    render();
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+  const close = () => {
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+  const step = d => { idx = (idx + d + group.length) % group.length; render(); };
+
+  document.querySelectorAll('[data-gallery]').forEach(g => {
+    const slides = [...g.querySelectorAll('.gallery-slide')];
+    slides.forEach((sl, i) => {
+      const im = sl.querySelector('img');
+      if (!im) return;
+      im.addEventListener('click', () => open(slides, i));
+      im.addEventListener('keydown', e => { if (e.key === 'Enter') open(slides, i); });
+    });
+  });
+
+  lb.querySelector('.lb-close').addEventListener('click', close);
+  lb.querySelector('.lb-prev').addEventListener('click', () => step(-1));
+  lb.querySelector('.lb-next').addEventListener('click', () => step(1));
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowRight') step(1);
+    if (e.key === 'ArrowLeft') step(-1);
+  });
+  let x0 = null;
+  lb.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', e => {
+    if (x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 45) step(dx < 0 ? 1 : -1);
+    x0 = null;
+  }, { passive: true });
+})();
 </script>
 </body>
 </html>
