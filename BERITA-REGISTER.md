@@ -6,7 +6,7 @@
 
 ---
 
-## ⚡ Next Available Number: **104**
+## ⚡ Next Available Number: **105**
 
 > Sebelum membuat artikel baru → ambil nomor ini → langsung increment +1 → update field di atas.
 > Jangan tunggu sampai upload selesai — update register segera setelah nomor diambil.
@@ -17,6 +17,7 @@
 
 | No | Slug / URL | Judul (ringkas) | Tanggal | Tag | Penulis | Tipe |
 |----|-----------|----------------|---------|-----|---------|------|
+| 104 | `104-uiaa-katalog-akses-global-aturan-izin-pemandu.html` | UIAA Luncurkan Katalog Akses Global, Aturan Izin dan Pemandu Bisa Dicek Sebelum Berangkat | 18 Nov 2026 | INTERNASIONAL | Manual (rilis resmi UIAA 18 Nov 2026, kutipan Victor Saunders; ilustrasi vektor Berita FMI: hero kontur + jejak, 2 figure, carousel IG 7 slide + 1 lembar story) | Lokal |
 | 103 | `103-fmi-sumsel-smc-2026-batch-1-50-peserta.html` | SMC 2026 Batch 1 Tuntas: 50 Peserta Lulus Level 1, FMI Sumsel Sebut Nol Kecelakaan | 17 Nov 2026 | PELATIHAN | Manual (keterangan tertulis FMI Pengprov Sumatera Selatan 17 Nov 2026, rincian materi dari artikel 099; foto Dok. FMI Sumsel; galeri geser 6 foto + carousel IG 7 slide) | Lokal |
 | 102 | `102-fmi-dki-jakarta-youth-educamp-pemuda-depok.html` | FMI DKI Jakarta Bawa Keterampilan Jalur Gunung ke Kampung, 40 Pemuda Depok Dilatih | 17 Nov 2026 | PELATIHAN | Manual (keterangan tertulis FMI DKI Jakarta via Kedai Pena 13 dan 17 Nov 2026 serta Kabarindo; foto Dok. FMI DKI Jakarta; galeri geser 3 foto + carousel IG 7 slide) | Lokal |
 | 101 | `101-dua-ekspedisi-marinir-carstensz-aconcagua.html` | Dua Ekspedisi Marinir ke Carstensz dan Aconcagua, di Masa Komando Buyung Lalana | 15 Nov 2026 | EKSPEDISI | Manual (reproduksi berita Askara.co karya Dar Edi Yoga 15 Nov 2026, sumber dan tautan dicantumkan di badan artikel; foto Dok. Agoy/Askara.co; carousel IG 7 slide + 1 lembar story) | Lokal |
